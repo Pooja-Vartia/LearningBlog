@@ -471,3 +471,62 @@ a {
     line-height: 1.9;
 }
 
+
+/* Article Hover Dropdown */
+
+.article-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown initially hidden */
+.article-dropdown .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 180px;
+    margin-top: 8px;
+    padding: 8px;
+
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: all 0.3s ease;
+}
+
+/* Show dropdown on hover */
+.article-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown links */
+.article-dropdown .dropdown-item {
+    padding: 10px 14px;
+    color: #333;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Hover effect on individual links */
+.article-dropdown .dropdown-item:hover {
+    background-color: #f0e6ff;
+    color: #8a2be2;
+}
+
+/* Article link */
+.article-dropdown .article-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
