@@ -1,0 +1,1425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first learning experience with HTML and CSS.">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+crossorigin="anonymous">
+ <link rel="stylesheet" href="BlogDesign.css">
+    <title>My First Handshake with HTML & CSS | Coding Blogs</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <p style="text-align: left;font-weight: bolder;margin-left: 0;">webworldwithpooja</p>
+            <a href="index.html" class="logo" style="text-align: center;">Coding<span>Blogs</span></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#content">Contact</a>
+                <a href="#article">Article</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Article -->
+    <main class="main-container" id="article">
+
+        <!-- Article Introduction -->
+        <section class="article-intro">
+            <span class="category">Frontend — Crafting What You See</span>
+
+            <h1>My First Handshake with HTML & CSS</h1>
+
+            <p class="subtitle">
+                From Classroom Scribbles to Bringing Web Pages to Life
+            </p>
+
+            <div class="article-meta">
+                <span>By Pooja Vartia</span>
+                <span>November 12, 2026</span>
+                <span>Beginner Journey</span>
+            </div>
+        </section>
+
+        <div class="article-layout">
+
+            <!-- Table of Contents -->
+            <aside class="sidebar" id="contents">
+                <h3>In This Article</h3>
+
+                <ul>
+                    <li><a href="#html-foundation"> HTML Document Foundation — Before the BODY</a></li>
+                    <li><a href="#section1">01. Where It All Started</a></li>
+                    <li><a href="#section2">02. Understanding HTML</a></li>
+                    <li><a href="#section3">03. My First HTML Page</a></li>
+                    <li><a href="#section4">04. Understanding HTML Tags</a></li>
+                    <li><a href="#section5">05. Entering the World of CSS</a></li>
+                    <li><a href="#section6">06. Understanding CSS</a></li>
+                    <li><a href="#section7">07. Connecting HTML with CSS</a></li>
+                    <li><a href="#section8">08. My First Styling Practice</a></li>
+                    <li><a href="#section9">09. What I Learned</a></li>
+                    <li><a href="#section10">10. The Beginning of My Journey</a></li>
+                </ul>
+            </aside>
+
+            <!-- Article Content -->
+            
+<!-- NEW LEARNING SECTION: HTML DOCUMENT FOUNDATION -->
+<section class="article-section" id="html-foundation">
+
+    <h2 style="background-color: #b4cad6;margin: 2% 0%;color: white;padding: 2% 1%;" >Before the BODY: The Foundation Every HTML Page Needs</h2>
+
+    <p>
+        Here is a question worth asking before we write our first heading:
+        <strong>How does a browser know what kind of document it is reading,
+        what language the page uses, and which resources it should load?</strong>
+        The answer begins before the visible content — in the foundation
+        of the HTML document.
+    </p>
+
+    <blockquote>
+        "A webpage does not begin when something appears on the screen.
+        It begins when the browser is given a structure it can understand."
+    </blockquote>
+
+    <p>
+        Beginners often start with elements such as headings, paragraphs,
+        images and links. These are important, but learning only the
+        <code>&lt;body&gt;</code> elements leaves out a big part of the picture.
+        A well-structured HTML document also needs a document declaration,
+        a root element, a <code>&lt;head&gt;</code> section and useful metadata.
+    </p>
+
+    <h3 style="margin-top: 5%;">First, what is an HTML boilerplate?</h3>
+
+    <p>
+        An <strong>HTML boilerplate</strong> is a ready-to-use starting
+        structure for an HTML page. It contains the essential document
+        declarations and commonly used head elements, so you do not have
+        to rebuild the foundation from scratch every time you create a page.
+        It is a starting point, not a fixed set of elements that every page
+        must use in exactly the same way.
+    </p>
+
+    <div class="code-example">
+        <div class="code-header">HTML — A Modern HTML5 Boilerplate</div>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="A short description of my webpage."&gt;
+    &lt;title&gt;My Project&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my webpage.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>
+        This is the document foundation with a small example of visible
+        content. Now let's open it up line by line and understand why each
+        part is there.
+    </p>
+
+    <h3 style="margin-top: 5%;">1. <code>&lt;!DOCTYPE html&gt;</code> — What does DOCTYPE really do?</h3>
+
+    <div class="code-example">
+        <div class="code-header">The document type declaration</div>
+        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+    </div>
+
+    <p>
+        DOCTYPE means <strong>Document Type Declaration</strong>. It is
+        not an HTML element. It is a declaration placed at the very
+        beginning of the document to tell the browser to use the modern
+        HTML standards-based rendering mode.
+    </p>
+
+    <p>
+        <strong>Where did it come from?</strong> Older HTML versions,
+        including HTML 4.01, used longer DOCTYPE declarations that referred
+        to a Document Type Definition (DTD). A DTD described the rules
+        for that document type. HTML5 simplified the declaration to the
+        short form <code>&lt;!DOCTYPE html&gt;</code>.
+    </p>
+
+    <p>
+        <strong>What if it is missing?</strong> Browsers may use
+        <em>Quirks Mode</em>, a compatibility mode that imitates some
+        older browser behaviours. This can make layout and sizing behave
+        differently from modern standards-based rendering.
+    </p>
+
+    <blockquote style="background-color: rgb(236, 236, 43);">
+        Question: Does DOCTYPE create a heading or show text on the page?
+        <br>
+        Answer: No. It is an instruction to the browser, not visible page content.
+    </blockquote>
+
+    <h3 style="margin-top: 5%;">2. <code>&lt;html lang="en"&gt;</code> — The root of the page</h3>
+
+    <div class="code-example">
+        <div class="code-header">The root HTML element</div>
+        <pre><code>&lt;html lang="en"&gt;
+    ...
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>&lt;html&gt;</code> element is the root element. It wraps
+        the whole HTML document, including both <code>&lt;head&gt;</code>
+        and <code>&lt;body&gt;</code>.
+    </p>
+
+    <p>
+        The <code>lang</code> attribute declares the main language of the
+        page. In <code>lang="en"</code>, <code>en</code> means English.
+        You could use <code>lang="hi"</code> for a Hindi-language page.
+        This helps assistive technologies, browsers and search systems
+        interpret the language more accurately.
+    </p>
+
+    <blockquote>
+        Question: Is <code>lang</code> an HTML tag?
+        <br>
+        Answer: No. It is an attribute that provides extra information
+        about the <code>&lt;html&gt;</code> element.
+    </blockquote>
+
+    <h3 style="margin-top: 5%;">3. <code>&lt;head&gt;</code> — Information behind the webpage</h3>
+
+    <p>
+        The <code>&lt;head&gt;</code> element contains document metadata
+        and references to resources. Metadata means information about
+        the document, rather than the main content readers see in the page.
+        The head is not a place for ordinary visible headings or paragraphs.
+    </p>
+
+    <p>
+        The following is the head structure you asked to include. Notice
+        that each line has a different responsibility:
+    </p>
+
+    <div class="code-example">
+        <div class="code-header">HTML — Inside the HEAD</div>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Project&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+    </div>
+
+    <h3>4. <code>&lt;meta charset="UTF-8"&gt;</code> — Character encoding</h3>
+
+    <div class="code-example">
+        <div class="code-header">Character encoding</div>
+        <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>&lt;meta&gt;</code> element provides metadata. The
+        <code>charset</code> attribute specifies the character encoding
+        used by the document. UTF-8 can represent characters from many
+        writing systems, along with numbers and symbols.
+    </p>
+
+    <p>
+        It helps text such as <strong>Hello</strong>, <strong>नमस्ते</strong>
+        and <strong>₹</strong> display correctly when the document is
+        saved and served using the matching encoding.
+    </p>
+
+    <blockquote>
+        Question: Does UTF-8 decide the font or text colour?
+        <br>
+        Answer: No. It defines how characters are encoded, not how they
+        are styled.
+    </blockquote>
+
+    <h3>5. The viewport meta tag — Helping pages fit device screens</h3>
+
+    <div class="code-example">
+        <div class="code-header">Viewport configuration</div>
+        <pre><code>&lt;meta name="viewport"
+      content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+    </div>
+
+    <ul class="learning-list">
+        <li>
+            <strong><code>name="viewport"</code>:</strong>
+            identifies the metadata as viewport settings.
+        </li>
+        <li>
+            <strong><code>width=device-width</code>:</strong>
+            sets the viewport width to the device's screen width.
+        </li>
+        <li>
+            <strong><code>initial-scale=1.0</code>:</strong>
+            sets the initial zoom level to 100%.
+        </li>
+    </ul>
+
+    <p>
+        This setting is an important part of responsive web development.
+        Without it, a page can appear zoomed out or use an unsuitable
+        layout viewport on mobile devices. But remember: this tag alone
+        does not make a website responsive. Flexible layouts, CSS units
+        and media queries are also needed.
+    </p>
+
+    <h3>6. <code>&lt;title&gt;</code> — The document's name</h3>
+
+    <div class="code-example">
+        <div class="code-header">Page title</div>
+        <pre><code>&lt;title&gt;My Project&lt;/title&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>&lt;title&gt;</code> element sets the document title.
+        It commonly appears in the browser tab and may be used in
+        bookmarks and search result title links. It belongs inside
+        <code>&lt;head&gt;</code>, not inside <code>&lt;body&gt;</code>.
+    </p>
+
+    <h3>7. <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> — Connecting CSS</h3>
+
+    <div class="code-example">
+        <div class="code-header">Linking an external stylesheet</div>
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+    </div>
+
+    <ul class="learning-list">
+        <li>
+            <strong><code>&lt;link&gt;</code>:</strong>
+            connects the document to an external resource.
+        </li>
+        <li>
+            <strong><code>rel="stylesheet"</code>:</strong>
+            describes the relationship; the resource is a stylesheet.
+        </li>
+        <li>
+            <strong><code>href="styles.css"</code>:</strong>
+            gives the location of the CSS file. Here it assumes the file
+            is in the same folder as the HTML document.
+        </li>
+    </ul>
+
+    <p>
+        The browser can load the stylesheet and apply its rules to the
+        HTML elements. HTML provides the structure; CSS controls
+        presentation such as colours, fonts, spacing, borders and layout.
+    </p>
+
+    <blockquote>
+        Question: Does the link tag write CSS styles for us?
+        <br>
+        Answer: No. It connects the CSS file. The actual styling rules
+        are written inside that file.
+    </blockquote>
+
+    <h3>8. <code>&lt;body&gt;</code> — The content users interact with</h3>
+
+    <div class="code-example">
+        <div class="code-header">The body section</div>
+        <pre><code>&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my webpage.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>&lt;body&gt;</code> contains the document's main content:
+        headings, paragraphs, images, links, lists, tables, forms, buttons,
+        audio, video and other page content. The browser interprets these
+        elements and displays the resulting page.
+    </p>
+
+    <p>
+        So, what happens if we write only an <code>&lt;h1&gt;</code> and
+        a <code>&lt;p&gt;</code> without writing the full structure?
+        Modern browsers can often recover from incomplete HTML and display
+        the content. But relying on browser recovery is not good practice.
+        A complete document gives the browser clear instructions and makes
+        the page more predictable and maintainable.
+    </p>
+
+    <h3>9. Closing tags — Knowing where elements end</h3>
+
+    <div class="code-example">
+        <div class="code-header">Closing the document structure</div>
+        <pre><code>&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <p>
+        The slash in <code>&lt;/body&gt;</code> and
+        <code>&lt;/html&gt;</code> marks closing tags. They indicate the
+        end of those elements. Most HTML elements have opening and closing
+        tags, while elements such as <code>&lt;meta&gt;</code> and
+        <code>&lt;link&gt;</code> are void elements and do not need closing
+        tags.
+    </p>
+
+    <h3>10. How do all these parts work together?</h3>
+
+    <p>
+        Think of the document as a well-organised structure. DOCTYPE tells
+        the browser to use standards mode; HTML is the root; HEAD provides
+        document information and resource references; BODY holds the main
+        content. The browser parses the HTML, builds its document
+        representation and uses the linked resources when rendering the page.
+    </p>
+
+    <div class="alert alert-primary">
+        <strong>Remember the foundation:</strong>
+
+        <ul class="mb-0 mt-2">
+            <li><strong>DOCTYPE:</strong> standards-mode declaration.</li>
+            <li><strong>HTML:</strong> root element of the document.</li>
+            <li><strong>HEAD:</strong> metadata and resource references.</li>
+            <li><strong>META:</strong> document metadata, such as encoding and viewport settings.</li>
+            <li><strong>TITLE:</strong> document title.</li>
+            <li><strong>LINK:</strong> connects an external resource such as a CSS stylesheet.</li>
+            <li><strong>BODY:</strong> main webpage content.</li>
+        </ul>
+    </div>
+
+    <h3>What should a beginner do — and what should they avoid?</h3>
+
+    <div class="alert alert-success">
+        <strong>Do this:</strong>
+
+        <ul class="mb-0 mt-2">
+            <li>Start new pages with a clear HTML5 boilerplate.</li>
+            <li>Understand what each declaration, element and attribute does.</li>
+            <li>Keep document metadata inside <code>&lt;head&gt;</code> and page content inside <code>&lt;body&gt;</code>.</li>
+            <li>Use the correct language and character encoding.</li>
+            <li>Connect external CSS using the correct file path.</li>
+            <li>Test your page in a browser and on different screen sizes.</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>Avoid this:</strong>
+
+        <ul class="mb-0 mt-2">
+            <li>Do not treat DOCTYPE as an ordinary HTML element.</li>
+            <li>Do not put visible page content such as headings and paragraphs in the head.</li>
+            <li>Do not assume the viewport tag alone makes a page responsive.</li>
+            <li>Do not copy a boilerplate without understanding its purpose.</li>
+            <li>Do not assume that a browser displaying incomplete HTML means the structure is correct.</li>
+        </ul>
+    </div>
+
+    <blockquote>
+        "Do not begin by asking only, 'Which tag should I write?'
+        First ask, 'What does the browser need to understand my page?'"
+    </blockquote>
+    <!--  -->
+<section class="learning-section">
+
+    <!-- SECTION 01 -->
+    <section class="learning-section" id="section1">
+        <span class="section-label">MY BEGINNING · 01</span>
+
+        <h2>01. Where It All Started</h2>
+
+        <p>
+            Every learning journey has a starting point. Mine began
+            during my BCA studies, when HTML and CSS were introduced
+            in our regular Computer Applications classes.
+        </p>
+
+        <p>
+            Initially, these technologies were simply new subjects
+            in my notebook. I started learning what HTML and CSS
+            meant, why websites needed them, and how developers
+            used them to create web pages.
+        </p>
+
+        <p>
+            I gradually realised that the websites we visit every
+            day are not just collections of pictures and text.
+            Behind every page is an organised structure and a
+            visual design working together.
+        </p>
+
+        <blockquote>
+            "I started by learning how websites were written.
+            Soon, I became curious about how I could create one myself."
+        </blockquote>
+
+        <h3>From everyday websites to web development</h3>
+
+        <p>
+            Think about an online shopping website. It contains
+            product names, prices, images, navigation links,
+            buttons and descriptions. All these elements need
+            a meaningful structure before their appearance
+            can be designed.
+        </p>
+
+        <p>
+            Similarly, a college website has admission information,
+            course lists, notices, contact details and navigation.
+            HTML and CSS help organise and present this information.
+        </p>
+
+        <div class="learning-example">
+            <h4>A simple way to understand my first concepts</h4>
+            <ul>
+                <li>HTML gives a webpage its structure.</li>
+                <li>CSS makes that structure visually attractive.</li>
+                <li>A browser interprets the code and displays the page.</li>
+            </ul>
+        </div>
+
+        <h3>What I wanted to discover</h3>
+
+        <p>
+            Instead of limiting myself to remembering definitions,
+            I wanted to understand what happened when I wrote
+            a piece of code and opened it in a browser.
+            That curiosity became my first step towards practical
+            web designing.
+        </p>
+
+        <blockquote>
+            "A new technology becomes interesting when you stop
+            reading about it and start experimenting with it."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 02 -->
+    <section class="learning-section" id="section2">
+        <span class="section-label">HTML FUNDAMENTALS · 02</span>
+
+        <h2>02. Understanding HTML</h2>
+
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>.
+            It is the standard markup language used to structure
+            the content of web pages.
+        </p>
+
+        <p>
+            To understand HTML, imagine a newspaper. A newspaper
+            has a main headline, smaller headings, paragraphs,
+            photographs and different sections of information.
+            Each part has its own purpose.
+        </p>
+
+        <p>
+            HTML works in a similar way. It tells the browser
+            which content is a heading, which content is a
+            paragraph, where an image belongs and which text
+            should work as a link.
+        </p>
+
+        <h3>HTML in the real world</h3>
+
+        <p>
+            Consider a college website displaying its admission
+            announcement. We might need a heading, an explanatory
+            paragraph, an admission image and a link to the
+            application form.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">HTML — A college announcement</div>
+            <pre><code>&lt;h1&gt;Admissions Open 2027&lt;/h1&gt;
+
+&lt;p&gt;
+    Applications are now open for
+    undergraduate courses.
+&lt;/p&gt;
+
+&lt;a href="admission.html"&gt;
+    Apply Now
+&lt;/a&gt;</code></pre>
+        </div>
+
+        <p>
+            The browser recognises the elements and displays
+            the heading, paragraph and clickable link.
+        </p>
+
+        <h3>What makes HTML important?</h3>
+
+        <ul class="learning-list">
+            <li>It organises information into meaningful elements.</li>
+            <li>It creates the foundation of web pages.</li>
+            <li>It supports images, links, tables, forms and multimedia.</li>
+            <li>It works alongside CSS and JavaScript.</li>
+            <li>Semantic HTML helps browsers and assistive technologies understand content.</li>
+        </ul>
+
+        <div class="learning-example">
+            <h4>Remember this distinction</h4>
+            <p>
+                HTML is a markup language, not a programming language.
+                Its main responsibility is describing the structure
+                and meaning of webpage content.
+            </p>
+        </div>
+
+        <blockquote>
+            "HTML tells the browser what the content is,
+            not how beautiful it should look."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 03 -->
+    <section class="learning-section" id="section3">
+        <span class="section-label">FIRST PRACTICAL EXPERIENCE · 03</span>
+
+        <h2>03. My First HTML Page</h2>
+
+        <p>
+            After understanding the basic idea of HTML, it was
+            time to write my first page. I started with a simple
+            text editor — Notepad.
+        </p>
+
+        <p>
+            I opened a blank document, wrote some HTML code,
+            saved the file with an .html extension and opened
+            it in my browser.
+        </p>
+
+        <p>
+            Seeing my written code appear as an actual webpage
+            was a small but exciting experience. It helped me
+            understand that a browser could interpret my
+            instructions and turn them into visible content.
+        </p>
+
+        <h3>Let's create a first webpage</h3>
+
+        <div class="code-example">
+            <div class="code-header">HTML — index.html</div>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My First Webpage!&lt;/h1&gt;
+
+    &lt;p&gt;
+        I am learning HTML and discovering
+        how websites are created.
+    &lt;/p&gt;
+
+    &lt;h2&gt;My Learning Goals&lt;/h2&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Understand HTML&lt;/li&gt;
+        &lt;li&gt;Practise CSS&lt;/li&gt;
+        &lt;li&gt;Create my own webpage&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;a href="https://developer.mozilla.org/"&gt;
+        Explore HTML Learning Resources
+    &lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <h3>What happened after writing the code?</h3>
+
+        <ol class="learning-list">
+            <li>Opened Notepad.</li>
+            <li>Wrote the HTML document.</li>
+            <li>Saved the file as <code>index.html</code>.</li>
+            <li>Opened the saved file in a web browser.</li>
+            <li>Observed the output displayed on the screen.</li>
+            <li>Changed the content and refreshed the browser.</li>
+        </ol>
+
+        <div class="learning-example">
+            <h4>My first practical lesson</h4>
+            <p>
+                The browser does not display the HTML code as
+                ordinary text. It interprets the markup and
+                renders the elements according to their meaning.
+            </p>
+            <br>
+        </div>
+
+        <!-- Optional: Add your actual first-page screenshot -->
+        <figure class="article-image">
+            <img src="web1.JPG" alt="" style="width: 100%;"
+                 alt="Screenshot of my first HTML webpage">
+          
+        </figure>
+
+        <blockquote>
+            "My first webpage was simple, but it gave me the
+            confidence to create something of my own."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 04 -->
+    <section class="learning-section" id="section4">
+        <span class="section-label">UNDERSTANDING ELEMENTS · 04</span>
+
+        <h2>04. Understanding HTML Tags</h2>
+
+        <p>
+            Once I started writing HTML, the next important
+            question was: what are these opening and closing
+            symbols that make the browser understand my content?
+        </p>
+
+        <p>
+            These are called HTML tags. Most HTML elements
+            consist of an opening tag, content and a closing tag.
+        </p>
+
+        <h3>Understanding the basic structure</h3>
+
+        <div class="code-example">
+            <div class="code-header">HTML — A paragraph element</div>
+            <pre><code>&lt;p&gt;Learning HTML is interesting.&lt;/p&gt;</code></pre>
+        </div>
+
+        <ul class="learning-list">
+            <li><strong>&lt;p&gt;</strong> — Opening tag.</li>
+            <li><strong>Learning HTML is interesting.</strong> — Content.</li>
+            <li><strong>&lt;/p&gt;</strong> — Closing tag.</li>
+        </ul>
+
+        <p>
+            Together, the opening tag, content and closing tag
+            form a paragraph element.
+        </p>
+
+        <h3>Common HTML tags I started exploring</h3>
+
+        <div class="code-example">
+            <div class="code-header">HTML — Basic elements</div>
+            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+
+&lt;h2&gt;Subheading&lt;/h2&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;a href="https://example.com"&gt;
+    Visit Website
+&lt;/a&gt;
+
+&lt;img src="photo.jpg"
+     alt="A sample photograph"&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+
+        <h3>Tags, elements and attributes — are they the same?</h3>
+
+        <p>
+            Not exactly. A tag is the markup written inside
+            angle brackets. An element represents the complete
+            structure. An attribute provides additional
+            information about an element.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">HTML — Understanding attributes</div>
+            <pre><code>&lt;a href="contact.html"
+   target="_blank"&gt;
+    Contact Us
+&lt;/a&gt;</code></pre>
+        </div>
+
+        <ul class="learning-list">
+            <li><code>href</code> specifies the destination.</li>
+            <li><code>target</code> controls where the linked page opens.</li>
+            <li><code>contact.html</code> is the attribute value.</li>
+        </ul>
+
+        <h3>Exploring more than basic text</h3>
+
+        <p>
+            As I progressed, I explored images, ordered and
+            unordered lists, tables, forms, formatting elements,
+            multimedia and semantic elements.
+        </p>
+
+        <p>
+            For example, an online registration page uses forms
+            to collect names, email addresses and other information.
+            A product page uses images and descriptions. A news
+            website uses headings, articles and navigation.
+        </p>
+
+        <div class="learning-example">
+            <h4>My practice rule</h4>
+            <p>
+                Learn the purpose of an element first. Then write
+                it, change its content and observe the result.
+                Do not memorise tags without understanding their use.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- SECTION 05 -->
+    <section class="learning-section" id="section5">
+        <span class="section-label">INTRODUCING VISUAL DESIGN · 05</span>
+
+        <h2>05. Entering the World of CSS</h2>
+
+        <p>
+            After exploring HTML, I began to notice something:
+            a webpage could have all the necessary content and
+            still look very plain.
+        </p>
+
+        <p>
+            Headings, paragraphs, lists and links gave the page
+            its structure, but how could I control their colours,
+            sizes, spacing and overall appearance?
+        </p>
+
+        <p>
+            This is where CSS entered my learning journey.
+        </p>
+
+        <h3>What does CSS bring to a webpage?</h3>
+
+        <p>
+            CSS stands for <strong>Cascading Style Sheets</strong>.
+            It is used to control the presentation and layout
+            of HTML documents.
+        </p>
+
+        <p>
+            Imagine a house. HTML is like its rooms, doors,
+            windows and walls. CSS is like the paint, decoration,
+            furniture arrangement and finishing that give the
+            house its visual appearance.
+        </p>
+
+        <div class="learning-example">
+            <h4>Everyday example: A restaurant website</h4>
+            <ul>
+                <li>HTML creates the menu headings and food descriptions.</li>
+                <li>CSS gives the menu its colours and typography.</li>
+                <li>CSS also arranges food images and menu cards.</li>
+            </ul>
+        </div>
+
+        <h3>My first look at CSS syntax</h3>
+
+        <div class="code-example">
+            <div class="code-header">CSS — A simple styling rule</div>
+            <pre><code>h1 {
+    color: blue;
+    font-size: 32px;
+    text-align: center;
+}</code></pre>
+        </div>
+
+        <p>
+            Here, <code>h1</code> is the selector. The properties
+            specify what we want to change, and the values
+            specify how those properties should behave.
+        </p>
+
+        <h3>What can CSS control?</h3>
+
+        <ul class="learning-list">
+            <li>Text colour and font size.</li>
+            <li>Background colours and images.</li>
+            <li>Borders, outlines and shadows.</li>
+            <li>Margins and padding.</li>
+            <li>Element positioning and layout.</li>
+            <li>Gradients, transitions and animations.</li>
+            <li>Responsive designs for different devices.</li>
+        </ul>
+
+        <blockquote>
+            "HTML creates the foundation. CSS gives that
+            foundation its visual personality."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 06 -->
+    <section class="learning-section" id="section6">
+        <span class="section-label">CSS FUNDAMENTALS · 06</span>
+
+        <h2>06. Understanding CSS</h2>
+
+        <p>
+            Learning CSS was not only about choosing colours.
+            I needed to understand how styling instructions
+            were written and how browsers applied them to
+            particular HTML elements.
+        </p>
+
+        <h3>1. CSS selectors</h3>
+
+        <p>
+            A selector identifies the HTML elements that
+            should receive a particular style.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Different selectors</div>
+            <pre><code>/* Element selector */
+p {
+    color: #444;
+}
+
+/* Class selector */
+.card {
+    background-color: white;
+}
+
+/* ID selector */
+#main-heading {
+    color: darkblue;
+}</code></pre>
+        </div>
+
+        <h3>2. CSS properties and values</h3>
+
+        <p>
+            Properties define what we want to style, while
+            values define the selected styling option.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Properties and values</div>
+            <pre><code>h2 {
+    color: navy;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}</code></pre>
+        </div>
+
+        <h3>3. Understanding the CSS box model</h3>
+
+        <p>
+            Every element can be understood as a rectangular
+            box consisting of content, padding, border and margin.
+        </p>
+
+        <div class="learning-example">
+            <h4>Imagine a framed photograph</h4>
+            <ul>
+                <li><strong>Content:</strong> The photograph itself.</li>
+                <li><strong>Padding:</strong> Space between the photograph and its frame.</li>
+                <li><strong>Border:</strong> The frame around it.</li>
+                <li><strong>Margin:</strong> Space between this frame and other objects.</li>
+            </ul>
+        </div>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Box model practice</div>
+            <pre><code>.photo-card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #315c9b;
+    margin: 15px;
+}</code></pre>
+        </div>
+
+        <h3>4. Backgrounds, borders and positioning</h3>
+
+        <p>
+            I also began exploring how elements could be
+            positioned and how backgrounds and borders could
+            change their appearance.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Visual styling</div>
+            <pre><code>.practice-box {
+    background-color: #eaf1fc;
+    border: 2px solid #315c9b;
+    outline: 2px dashed #9bb6df;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    top: 5px;
+}</code></pre>
+        </div>
+
+        <h3>5. Gradients, transitions and animations</h3>
+
+        <p>
+            Gradually, I experimented with more visual effects.
+            Gradients allowed me to blend colours, transitions
+            made changes smoother, and animations introduced
+            movement into elements.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Gradient and transition</div>
+            <pre><code>.gradient-card {
+    background: linear-gradient(
+        120deg,
+        #315c9b,
+        #8caddb
+    );
+
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gradient-card:hover {
+    transform: translateY(-5px);
+}</code></pre>
+        </div>
+
+        <div class="learning-example">
+            <h4>My growing understanding</h4>
+            <p>
+                CSS became easier when I stopped treating
+                properties as isolated instructions and began
+                understanding how they worked together.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- SECTION 07 -->
+    <section class="learning-section" id="section7">
+        <span class="section-label">BRINGING BOTH TOGETHER · 07</span>
+
+        <h2>07. Connecting HTML with CSS</h2>
+
+        <p>
+            Understanding HTML and CSS separately was important,
+            but the real experience began when I connected them.
+        </p>
+
+        <p>
+            HTML provides the elements, while CSS selects those
+            elements and controls their appearance.
+        </p>
+
+        <h3>How do we connect an external CSS file?</h3>
+
+        <p>
+            We use the <code>&lt;link&gt;</code> element inside
+            the HTML document's <code>&lt;head&gt;</code>.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">HTML — index.html</div>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My HTML and CSS Page&lt;/title&gt;
+
+    &lt;link rel="stylesheet"
+          href="style.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+    &lt;p&gt;
+        HTML and CSS work together
+        to create webpages.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="code-example">
+            <div class="code-header">CSS — style.css</div>
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+}
+
+h1 {
+    color: #315c9b;
+    text-align: center;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}</code></pre>
+        </div>
+
+        <h3>Understanding the connection</h3>
+
+        <p>
+            The browser reads the HTML document, discovers the
+            linked stylesheet and applies the matching CSS rules.
+            The result is a webpage with structured content
+            and visual styling.
+        </p>
+
+        <div class="learning-example">
+            <h4>A practical example: An online product card</h4>
+            <ul>
+                <li>HTML creates the product image, name, price and button.</li>
+                <li>CSS arranges the content inside a card.</li>
+                <li>CSS adds the background, border, spacing and hover effect.</li>
+            </ul>
+        </div>
+
+        <blockquote>
+            "Writing HTML and CSS separately helped me understand
+            that good web design is a combination of structure
+            and presentation."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 08 -->
+    <section class="learning-section" id="section8">
+        <span class="section-label">LEARNING BY EXPERIMENTING · 08</span>
+
+        <h2>08. My First Styling Practice</h2>
+
+        <p>
+            Once I understood how to connect CSS with HTML,
+            I started experimenting with the appearance of
+            different elements.
+        </p>
+
+        <p>
+            Instead of using only one colour or one type of
+            layout, I wanted to see what would happen when
+            I changed backgrounds, borders, spacing, positions
+            and other CSS properties.
+        </p>
+
+        <h3>Practice 1 — Backgrounds and colours</h3>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Background styling</div>
+            <pre><code>.welcome-box {
+    background-color: #e8f0ff;
+    color: #263b5a;
+    padding: 25px;
+    border-radius: 8px;
+}</code></pre>
+        </div>
+
+        <h3>Practice 2 — Margins and padding</h3>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Spacing elements</div>
+            <pre><code>.content-box {
+    margin: 20px;
+    padding: 25px;
+    border: 1px solid #b8c9df;
+}</code></pre>
+        </div>
+
+        <h3>Practice 3 — Positioning</h3>
+
+        <p>
+            Positioning was one of the concepts that required
+            extra attention. I experimented with relative
+            positioning and observed how an element could
+            move from its original position.
+        </p>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Relative positioning</div>
+            <pre><code>.moving-box {
+    position: relative;
+    left: 15px;
+    top: 10px;
+}</code></pre>
+        </div>
+
+        <h3>Practice 4 — Gradient effects</h3>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Linear gradient</div>
+            <pre><code>.colour-panel {
+    background: linear-gradient(
+        to right,
+        #315c9b,
+        #9bc2e8
+    );
+    padding: 30px;
+    border-radius: 12px;
+}</code></pre>
+        </div>
+
+        <h3>Practice 5 — Hover effects and transitions</h3>
+
+        <div class="code-example">
+            <div class="code-header">CSS — Interactive visual effect</div>
+            <pre><code>.my-button {
+    background-color: #315c9b;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #203f70;
+}</code></pre>
+        </div>
+
+        <h3>What made practice interesting?</h3>
+
+        <p>
+            I could change a single CSS value, save the file,
+            refresh the browser and immediately observe a
+            different result.
+        </p>
+
+        <p>
+            I also explored borders, outlines, lists, tables,
+            background images and animations. Each experiment
+            helped me understand the relationship between
+            code and visual output.
+        </p>
+
+        <div class="learning-example">
+            <h4>My practice approach</h4>
+            <p>
+                Write the code → Save the file → Refresh the browser
+                → Observe the result → Change the values → Experiment again.
+            </p>
+
+            <br>
+            <div style="margin: 5%;">
+                <img src="web2.JPG" alt="loading" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 09 -->
+    <section class="learning-section" id="section9">
+        <span class="section-label">REFLECTION AND GROWTH · 09</span>
+
+        <h2>09. What I Learned</h2>
+
+        <p>
+            Learning HTML and CSS was not simply about writing
+            code that worked. It was also about understanding
+            mistakes, correcting them and developing the habit
+            of experimenting independently.
+        </p>
+
+        <h3>Some mistakes were part of my learning</h3>
+
+        <p>
+            In the beginning, even small syntax mistakes could
+            affect my output. Sometimes I missed a colon or
+            semicolon, used quotation marks incorrectly or
+            struggled to understand why a CSS property was
+            not producing the expected result.
+        </p>
+
+        <p>
+            Relative positioning and gradient values also
+            required repeated practice before their behaviour
+            became clearer.
+        </p>
+
+        <div class="learning-example">
+            <h4>Example: A small CSS mistake</h4>
+
+            <div class="code-example">
+                <div class="code-header">Incorrect CSS</div>
+                <pre><code>h1 {
+    color blue;
+    font-size: 30px
+}</code></pre>
+            </div>
+
+            <div class="code-example">
+                <div class="code-header">Correct CSS</div>
+                <pre><code>h1 {
+    color: blue;
+    font-size: 30px;
+}</code></pre>
+            </div>
+
+            <p>
+                The missing colon after <code>color</code>
+                makes that declaration invalid. The missing
+                final semicolon is optional here, but using
+                consistent semicolons makes CSS easier to read.
+            </p>
+        </div>
+
+        <h3>What these lessons taught me</h3>
+
+        <ul class="learning-list">
+            <li>Read the code carefully before changing it.</li>
+            <li>Understand the purpose of every property.</li>
+            <li>Check opening and closing tags.</li>
+            <li>Use correct punctuation and quotation marks.</li>
+            <li>Experiment with different values.</li>
+            <li>Compare browser output with the expected result.</li>
+            <li>Do not become discouraged by errors.</li>
+        </ul>
+
+        <h3>My learning formula</h3>
+
+        <div class="learning-formula">
+            <span>Understand</span>
+            <span>Practise</span>
+            <span>Experiment</span>
+            <span>Observe</span>
+            <span>Improve</span>
+        </div>
+
+        <blockquote>
+            "An error is not the end of a learning process.
+            Sometimes it is the clearest explanation of what
+            we still need to understand."
+        </blockquote>
+    </section>
+
+
+    <!-- SECTION 10 -->
+    <section class="learning-section" id="section10">
+        <span class="section-label">LOOKING AHEAD · 10</span>
+
+        <h2>10. The Beginning of My Journey</h2>
+
+        <p>
+            Looking back, my first HTML and CSS exercises were
+            small steps, but they introduced me to a completely
+            new way of thinking about websites.
+        </p>
+
+        <p>
+            I began with classroom lessons, continued with
+            simple code in Notepad, and gradually became
+            interested in experimenting with webpage layouts,
+            styling and visual presentation.
+        </p>
+
+        <p>
+            What started as learning two subjects during my
+            BCA studies slowly developed into a personal
+            interest in building websites and understanding
+            how digital experiences are created.
+        </p>
+
+        <h3>From learning concepts to creating projects</h3>
+
+        <p>
+            My next goal was to use these foundations in
+            practical projects. I wanted to move beyond
+            individual HTML elements and CSS properties
+            and understand how complete webpages could
+            be planned, designed and developed.
+        </p>
+
+        <div class="learning-example">
+            <h4>What comes next in my learning journey?</h4>
+            <ul>
+                <li>Building complete multi-section webpages.</li>
+                <li>Practising responsive web design.</li>
+                <li>Understanding JavaScript interactions.</li>
+                <li>Exploring front-end and back-end development.</li>
+                <li>Creating projects based on real-world ideas.</li>
+            </ul>
+        </div>
+
+        <h3>A message for fellow beginners</h3>
+
+        <p>
+            If you are starting your own web development journey,
+            do not feel that you must understand everything
+            in one day. Begin with a small webpage, practise
+            each concept and give yourself time to experiment.
+        </p>
+
+        <blockquote class="final-quote">
+            "I did not begin with the knowledge of how to build
+            complete websites. I began with curiosity, a text
+            editor and the willingness to learn. And that was
+            enough to take my first step."
+        </blockquote>
+
+        <div class="author-note" id="about-author">
+            <h3>About This Learning Experience</h3>
+            <p>
+                This article shares my personal introduction
+                to HTML and CSS during my BCA learning experience.
+                It is written to help beginners understand
+                foundational web technologies through practical
+                examples, experimentation and real learning
+                experiences.
+            </p>
+            <p>
+                <strong>Keep learning. Keep creating. Keep improving.</strong>
+            </p>
+        </div>
+    </section>
+
+</section>
+
+</section>
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Coding Blogs | Decode. Discover. Develop.</p>
+    </footer>
+
+</body>
+</html>

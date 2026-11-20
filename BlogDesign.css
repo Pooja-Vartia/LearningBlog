@@ -1,0 +1,473 @@
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+:root {
+    --primary: #315c9b;
+    --dark: #202b3c;
+    --text: #424b57;
+    --muted: #788391;
+    --background: #f7f9fc;
+    --white: #ffffff;
+    --border: #e5eaf1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 15px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.navbar {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar a {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary);
+}
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.main-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 35px 24px 50px;
+}
+
+/* ==============================
+   ARTICLE INTRO
+============================== */
+
+.article-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 32px;
+}
+
+.category {
+    display: inline-block;
+    color: var(--primary);
+    background: #eaf1fc;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.article-intro h1 {
+    color: var(--dark);
+    font-size: clamp(30px, 5vw, 45px);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* ==============================
+   ARTICLE LAYOUT
+============================== */
+
+.article-layout {
+    display: grid;
+    grid-template-columns: 245px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 16px;
+    position: sticky;
+    top: 85px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #edf3fc;
+    color: var(--primary);
+}
+
+/* ==============================
+   ARTICLE CONTENT
+============================== */
+
+.article-content {
+    min-width: 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px 34px;
+}
+
+.opening-quote {
+    background: #f0f5fc;
+    border-left: 4px solid var(--primary);
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    color: var(--dark);
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ==============================
+   ARTICLE SECTIONS
+============================== */
+
+.article-section {
+    margin-bottom: 25px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+    scroll-margin-top: 95px;
+}
+
+.article-section:last-of-type {
+    border-bottom: none;
+}
+
+.article-section h2 {
+    color: var(--dark);
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.article-section p {
+    font-size: 14px;
+    margin-bottom: 11px;
+    color: var(--text);
+}
+
+.article-section ul {
+    padding-left: 22px;
+}
+
+.learning-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* ==============================
+   CODE EXAMPLES
+============================== */
+
+.code-example {
+    background: #172334;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.code-header {
+    background: #25354b;
+    color: #dce7f5;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.code-example pre {
+    padding: 14px 17px;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.code-example code {
+    color: #d6e5f7;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* ==============================
+   BLOCKQUOTES
+============================== */
+
+.article-section blockquote {
+    background: #f7f9fc;
+    border-left: 3px solid var(--primary);
+    padding: 12px 16px;
+    margin-top: 15px;
+    color: var(--dark);
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* ==============================
+   ARTICLE IMAGES
+============================== */
+
+.article-image {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.article-image img {
+    display: block;
+    width: 100%;
+    max-height: 340px;
+    object-fit: contain;
+    background: #f4f6fa;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.article-image p {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+/* ==============================
+   AUTHOR NOTE
+============================== */
+
+.author-note {
+    background: #f0f5fc;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.author-note h3 {
+    color: var(--dark);
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.author-note p {
+    font-size: 13px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    text-align: center;
+    background: var(--dark);
+    color: #dce4ef;
+    padding: 18px 15px;
+    font-size: 12px;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 850px) {
+    .article-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .sidebar ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px 10px;
+    }
+
+    .article-content {
+        padding: 25px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 550px) {
+    .header-container {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .main-container {
+        padding: 25px 13px 35px;
+    }
+
+    .article-intro {
+        margin-bottom: 23px;
+    }
+
+    .article-intro h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .article-meta {
+        gap: 8px 13px;
+    }
+
+    .sidebar {
+        padding: 15px 12px;
+    }
+
+    .sidebar ul {
+        grid-template-columns: 1fr;
+    }
+
+    .article-content {
+        padding: 19px 15px;
+    }
+
+    .article-section h2 {
+        font-size: 19px;
+    }
+
+    .article-section p {
+        font-size: 13px;
+    }
+
+    .code-example pre {
+        padding: 12px;
+    }
+
+    .code-example code {
+        font-size: 12px;
+    }
+}
+.learning-section {
+    padding-top: 15px;
+    margin-bottom: 35px;
+    scroll-margin-top: 100px;
+}
+
+.learning-section h2 {
+    color: #202b3c;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.learning-section h3 {
+    color: #315c9b;
+    font-size: 19px;
+}
+
+.learning-section p {
+    color: #424b57;
+    font-size: 14px;
+    line-height: 1.9;
+}
+

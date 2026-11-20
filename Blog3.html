@@ -1,0 +1,2538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="My third handshake with responsiveness: discovering Bootstrap 5 and its responsive classes and components.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <!-- Common Blog Design CSS -->
+    <link rel="stylesheet" href="BlogDesign.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Third Handshake with Responsiveness | Coding Blogs</title>
+</head>
+
+<body>
+
+    <!-- =================================
+         HEADER
+    ================================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <p style="text-align: left;
+                      font-weight: bolder;
+                      margin-left: 0;">
+                webworldwithpooja
+            </p>
+
+            <a href="index.html" class="logo"
+               style="text-align: center;">
+                Coding<span>Blogs</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#content">Contact</a>
+                <a href="#article">Article</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN ARTICLE
+    ================================= -->
+
+    <main class="main-container" id="article">
+
+
+        <!-- =================================
+             ARTICLE INTRODUCTION
+        ================================= -->
+
+        <section class="article-intro">
+
+            <span class="category">
+                Frontend — Building Responsive Experiences
+            </span>
+
+            <h1>My Third Handshake with Responsiveness</h1>
+
+            <p class="subtitle">
+                Discovering Bootstrap 5 — From Structured Websites
+                to Responsive User Experiences
+            </p>
+
+            <div class="article-meta">
+
+                <span>By Pooja Vartia</span>
+                <span>November 18, 2026</span>
+                <span>Learning Journey</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             ARTICLE LAYOUT
+        ================================= -->
+
+        <div class="article-layout">
+
+
+            <!-- =================================
+                 SIDEBAR / TABLE OF CONTENTS
+            ================================= -->
+
+            <aside class="sidebar" id="contents">
+
+                <h3>In This Article</h3>
+
+                <ul>
+
+                    <li><a href="#section1">01. Where Responsiveness Entered My Journey</a></li>
+
+                    <li><a href="#section2">02. Discovering Bootstrap</a></li>
+
+                    <li><a href="#section3">03. What Is Bootstrap?</a></li>
+
+                    <li><a href="#section4">04. Why Developers Use Bootstrap</a></li>
+
+                    <li><a href="#section5">05. Bootstrap Layout Containers</a></li>
+
+                    <li><a href="#section6">06. Responsive Grid System</a></li>
+
+                    <li><a href="#section7">07. Rows, Columns and Gutters</a></li>
+
+                    <li><a href="#section8">08. Navbar — My Favourite Component</a></li>
+
+                    <li><a href="#section9">09. Buttons and Button Groups</a></li>
+
+                    <li><a href="#section10">10. Alerts, Badges and Collapse</a></li>
+
+                    <li><a href="#section11">11. Dropdowns and Carousel</a></li>
+
+                    <li><a href="#section12">12. Lists, Tables and Cards</a></li>
+
+                    <li><a href="#section13">13. Modals and Forms</a></li>
+
+                    <li><a href="#section14">14. Bootstrap Utility Classes</a></li>
+
+                    <li><a href="#section15">15. My Practice Philosophy</a></li>
+
+                    <li><a href="#section16">16. My Learning Resources</a></li>
+
+                    <li><a href="#conclusion">17. My Third Handshake — A New Perspective</a></li>
+
+                </ul>
+
+            </aside>
+
+
+            <!-- =================================
+                 MAIN ARTICLE CONTENT
+                 ALL LINKED SECTIONS GO INSIDE
+                 THIS ARTICLE-CONTENT WRAPPER
+            ================================= -->
+
+            <article class="article-content">
+
+
+                <!-- OPENING QUOTE -->
+
+                <div class="opening-quote">
+
+                    A website is not complete when it only looks good
+                    on one screen. It becomes more meaningful when
+                    everyone can use it comfortably, whatever device
+                    they choose.
+
+                </div>
+
+
+                <!-- =================================
+                     SECTION 01
+                ================================= -->
+
+                <section class="learning-section" id="section1">
+
+                    <span class="section-label">01 / My Learning Journey</span>
+
+                    <h2>01. Where Responsiveness Entered My Journey</h2>
+
+                    <p>
+                        During my web development learning journey, I gradually
+                        understood that creating a website is not only about
+                        writing HTML, applying CSS, or adding JavaScript
+                        functionality.
+                    </p>
+
+                    <p>
+                        A good website needs three important things:
+                        a meaningful structure, an attractive design,
+                        and working functionality. But while learning further,
+                        I discovered another important part of web development
+                        — <strong>Responsiveness.</strong>
+                    </p>
+
+                    <p>
+                        I started thinking about how a website should look
+                        and work on different devices. A design that looks
+                        perfect on my computer should also provide a
+                        comfortable experience to someone visiting it
+                        from a mobile phone, tablet, or laptop.
+                    </p>
+
+                    <h3>Why Did Responsiveness Matter to Me?</h3>
+
+                    <p>
+                        Imagine opening a website on a mobile phone and
+                        finding that its text is too small, its buttons
+                        are difficult to click, or its content moves
+                        outside the screen. The user may struggle to
+                        understand or use that website.
+                    </p>
+
+                    <p>
+                        I realised that a website should adjust its layout
+                        according to the available screen space. It should
+                        not force users to zoom in and out or scroll
+                        horizontally just to read ordinary content.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h4>What I wanted my websites to achieve</h4>
+
+                        <ul>
+                            <li>Readable content on smaller screens.</li>
+                            <li>Comfortable buttons and navigation.</li>
+                            <li>Well-organised layouts on tablets and desktops.</li>
+                            <li>A smooth experience across different devices.</li>
+                        </ul>
+
+                    </div>
+
+                    <blockquote>
+                        A website should not only look good on one screen.
+                        It should provide a smooth experience across
+                        different screen sizes.
+                    </blockquote>
+
+                    <p>
+                        This curiosity encouraged me to explore responsiveness
+                        more deeply and search for tools and resources that
+                        could help me understand how developers build
+                        flexible website layouts.
+                    </p>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 02
+                ================================= -->
+
+                <section class="learning-section" id="section2">
+
+                    <span class="section-label">02 / My First Discovery</span>
+
+                    <h2>02. Discovering Bootstrap</h2>
+
+                    <p>
+                        While searching for ways to make websites responsive,
+                        I came across a front-end framework called
+                        <strong>Bootstrap.</strong>
+                    </p>
+
+                    <p>
+                        Bootstrap introduced me to a different way of writing
+                        front-end code. Instead of creating every common
+                        layout and component completely from scratch,
+                        developers can use its predefined CSS classes
+                        and ready-to-use components.
+                    </p>
+
+                    <p>
+                        I learned that Bootstrap provides tools for building
+                        responsive layouts and designing common interface
+                        elements such as navigation bars, buttons, alerts,
+                        dropdowns, carousels, and more.
+                    </p>
+
+                    <h3>What Made Me Curious About It?</h3>
+
+                    <p>
+                        Before discovering Bootstrap, I was learning how
+                        HTML and CSS work together. I understood that I
+                        could create a design by writing my own CSS rules.
+                    </p>
+
+                    <p>
+                        But Bootstrap showed me that many common design
+                        requirements already have predefined classes.
+                        I could apply those classes directly to HTML
+                        elements and observe how their appearance changed.
+                    </p>
+
+                    <p>
+                        This discovery made me curious to explore how
+                        these classes work and how they can be used
+                        inside a simple HTML structure.
+                    </p>
+
+                    <blockquote>
+                        Learning Bootstrap helped me understand that
+                        developers can build responsive interfaces
+                        without repeatedly creating every common
+                        style from the beginning.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 03
+                ================================= -->
+
+                <section class="learning-section" id="section3">
+
+                    <span class="section-label">03 / Understanding the Framework</span>
+
+                    <h2>03. What Is Bootstrap?</h2>
+
+                    <p>
+                        Bootstrap is a popular front-end framework that
+                        helps developers create responsive and
+                        mobile-first websites.
+                    </p>
+
+                    <p>
+                        It provides a collection of ready-made CSS classes,
+                        layout systems, and interface components. We can
+                        apply these classes directly to HTML elements
+                        to build and style different parts of a website.
+                    </p>
+
+                    <h3>How Does Bootstrap Help Developers?</h3>
+
+                    <p>
+                        Suppose I want to create a button for my website.
+                        Without a framework, I may write custom CSS for
+                        its background colour, text colour, padding,
+                        border, and hover effect.
+                    </p>
+
+                    <p>
+                        With Bootstrap, I can use its predefined button
+                        classes to create a styled button more quickly.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: A Bootstrap Button</h4>
+
+                        <pre><code>&lt;button class="btn btn-primary"&gt;
+    Click Me
+&lt;/button&gt;</code></pre>
+
+                        <p>
+                            Here, <strong>btn</strong> provides the basic
+                            Bootstrap button styling, while
+                            <strong>btn-primary</strong> applies the
+                            primary button appearance.
+                        </p>
+
+                    </div>
+
+                    <h3>What Does a Bootstrap Class Do?</h3>
+
+                    <p>
+                        A class is written inside the HTML element's
+                        <strong>class</strong> attribute. Bootstrap
+                        provides CSS rules for recognised class names.
+                        When the browser loads Bootstrap's stylesheet,
+                        those rules are applied to the matching elements.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Applying Multiple Classes</h4>
+
+                        <pre><code>&lt;div class="container text-center mt-4"&gt;
+    &lt;h2&gt;Learning Bootstrap&lt;/h2&gt;
+    &lt;p&gt;Exploring responsive web design.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            Here, the classes work together:
+                        </p>
+
+                        <ul class="learning-list">
+                            <li><strong>container:</strong> provides a responsive content area.</li>
+                            <li><strong>text-center:</strong> centres the text.</li>
+                            <li><strong>mt-4:</strong> adds top margin using Bootstrap spacing utilities.</li>
+                        </ul>
+
+                    </div>
+
+                    <p>
+                        This helped me understand how predefined classes
+                        can reduce repetitive styling work and make
+                        the development process more convenient.
+                    </p>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 04
+                ================================= -->
+
+                <section class="learning-section" id="section4">
+
+                    <span class="section-label">04 / My Understanding</span>
+
+                    <h2>04. Why Developers Use Bootstrap</h2>
+
+                    <p>
+                        As I explored Bootstrap, I understood that its
+                        usefulness goes beyond simply making a website
+                        look attractive. It also helps developers work
+                        with a consistent layout and save time during
+                        development.
+                    </p>
+
+                    <h3>Some Important Benefits I Discovered</h3>
+
+                    <ul class="learning-list">
+
+                        <li>
+                            <strong>Responsive layouts:</strong>
+                            Bootstrap provides a grid system and
+                            responsive classes that help layouts
+                            adjust to different screen sizes.
+                        </li>
+
+                        <li>
+                            <strong>Predefined styling:</strong>
+                            Developers can use ready-made classes
+                            instead of writing custom CSS for every
+                            common design requirement.
+                        </li>
+
+                        <li>
+                            <strong>Reusable components:</strong>
+                            Components such as navbars, buttons,
+                            alerts, and dropdowns help build common
+                            interface elements.
+                        </li>
+
+                        <li>
+                            <strong>Time-saving development:</strong>
+                            It reduces repetitive styling work and
+                            helps developers focus more on the
+                            structure and functionality of a project.
+                        </li>
+
+                        <li>
+                            <strong>Consistent design:</strong>
+                            Its predefined classes help maintain
+                            a consistent appearance across different
+                            parts of a website.
+                        </li>
+
+                        <li>
+                            <strong>Mobile-first approach:</strong>
+                            Bootstrap's responsive layout system
+                            makes it easier to begin with smaller
+                            screens and adapt the design to larger ones.
+                        </li>
+
+                    </ul>
+
+                    <h3>Does Bootstrap Replace CSS?</h3>
+
+                    <p>
+                        No. Bootstrap does not mean that we no longer
+                        need CSS. Bootstrap itself is built around CSS
+                        and provides predefined styles that we can use.
+                    </p>
+
+                    <p>
+                        We can still write our own CSS whenever a project
+                        needs a custom design, a special visual effect,
+                        or a layout that is not covered by the framework.
+                    </p>
+
+                    <blockquote>
+                        My understanding was simple: learn the classes,
+                        understand their purpose, and then practise
+                        using them in real HTML layouts.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 05
+                ================================= -->
+
+                <section class="learning-section" id="section5">
+
+                    <span class="section-label">05 / Understanding Layouts</span>
+
+                    <h2>05. Bootstrap Layout Containers</h2>
+
+                    <p>
+                        After understanding the purpose of Bootstrap,
+                        I started exploring its layout system. One of
+                        the first concepts I learned was
+                        <strong>Containers.</strong>
+                    </p>
+
+                    <p>
+                        A container is a Bootstrap layout class that
+                        helps organise and hold the content of a webpage.
+                        It provides horizontal spacing and controls
+                        the maximum width of the content according
+                        to the screen size.
+                    </p>
+
+                    <p>
+                        Instead of allowing content to spread across
+                        the entire screen, containers help maintain
+                        a comfortable content area. This makes a
+                        webpage easier to read and organise.
+                    </p>
+
+                    <h3>Understanding Different Container Classes</h3>
+
+                    <p>
+                        Bootstrap provides different container classes.
+                        While learning them, I understood that each
+                        class controls the width of the content
+                        in a different way.
+                    </p>
+
+                    <ul class="learning-list">
+
+                        <li>
+                            <strong>.container:</strong>
+                            Creates a responsive fixed maximum-width
+                            container. Its width changes at Bootstrap's
+                            predefined breakpoints.
+                        </li>
+
+                        <li>
+                            <strong>.container-fluid:</strong>
+                            Creates a full-width container that occupies
+                            100% of the available width.
+                        </li>
+
+                        <li>
+                            <strong>.container-sm:</strong>
+                            Uses full width below the small breakpoint
+                            and a responsive maximum width from that
+                            breakpoint onward.
+                        </li>
+
+                        <li>
+                            <strong>.container-md:</strong>
+                            Applies its responsive maximum width from
+                            the medium breakpoint onward.
+                        </li>
+
+                        <li>
+                            <strong>.container-lg:</strong>
+                            Applies its responsive maximum width from
+                            the large breakpoint onward.
+                        </li>
+
+                        <li>
+                            <strong>.container-xl and .container-xxl:</strong>
+                            Apply their responsive maximum widths from
+                            the extra-large and extra-extra-large
+                            breakpoints onward.
+                        </li>
+
+                    </ul>
+
+                    <h3>My First Practical Example</h3>
+
+                    <p>
+                        To understand the difference, I practised
+                        using container classes directly inside
+                        HTML elements.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example 1: Responsive Container</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+    &lt;h2&gt;Welcome to My Website&lt;/h2&gt;
+    &lt;p&gt;This content is inside a Bootstrap container.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            Here, <strong>container</strong> provides
+                            a responsive maximum-width area for
+                            the heading and paragraph.
+                        </p>
+
+                    </div>
+
+                    <div class="code-example">
+
+                        <h4>Example 2: Full-Width Container</h4>
+
+                        <pre><code>&lt;div class="container-fluid"&gt;
+    &lt;h2&gt;Full Width Layout&lt;/h2&gt;
+    &lt;p&gt;This container uses the full available width.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            In this example, <strong>container-fluid</strong>
+                            allows the content area to occupy the
+                            full available width of its parent.
+                        </p>
+
+                    </div>
+
+                    <h3>What Did I Understand?</h3>
+
+                    <p>
+                        Through this practice, I understood that
+                        choosing a container depends on the layout
+                        requirement. If I want a centred content
+                        area with responsive maximum widths, I can
+                        use <strong>.container</strong>. If I want
+                        the layout to use the complete available
+                        width, I can use <strong>.container-fluid</strong>.
+                    </p>
+
+                    <blockquote>
+                        My learning was not just about remembering
+                        class names. It was about understanding
+                        how each class changes the structure
+                        and available space of a webpage.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 06
+                ================================= -->
+
+                <section class="learning-section" id="section6">
+
+                    <span class="section-label">06 / Responsive Layouts</span>
+
+                    <h2>06. Responsive Grid System</h2>
+
+                    <p>
+                        After learning about containers, I moved
+                        towards another important Bootstrap concept:
+                        the <strong>Grid System.</strong>
+                    </p>
+
+                    <p>
+                        The grid system helps us divide a webpage
+                        into rows and columns. It makes it easier
+                        to organise content and change the layout
+                        according to different screen sizes.
+                    </p>
+
+                    <h3>Understanding the 12-Column Grid</h3>
+
+                    <p>
+                        Bootstrap's grid system is based on
+                        12 columns. We can divide these 12 columns
+                        in different ways depending on how much
+                        space each section needs.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h4>Imagine a row divided into 12 parts</h4>
+
+                        <ul>
+                            <li>12 columns can create one full-width section.</li>
+                            <li>6 + 6 columns can create two equal sections.</li>
+                            <li>4 + 4 + 4 columns can create three equal sections.</li>
+                            <li>3 + 3 + 3 + 3 columns can create four equal sections.</li>
+                        </ul>
+
+                    </div>
+
+                    <h3>How Do Column Classes Work?</h3>
+
+                    <p>
+                        Bootstrap provides classes such as
+                        <strong>col-6</strong>, <strong>col-4</strong>,
+                        and <strong>col-3</strong>. These classes
+                        control how much of the 12-column row
+                        each element occupies.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example 1: Two Equal Columns</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+
+        &lt;div class="col-6"&gt;
+            Left Side
+        &lt;/div&gt;
+
+        &lt;div class="col-6"&gt;
+            Right Side
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            Each column occupies 6 out of 12 grid
+                            columns, so both sections receive
+                            equal width.
+                        </p>
+
+                    </div>
+
+                    <div class="code-example">
+
+                        <h4>Example 2: Three Equal Columns</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+
+        &lt;div class="col-4"&gt;Column 1&lt;/div&gt;
+
+        &lt;div class="col-4"&gt;Column 2&lt;/div&gt;
+
+        &lt;div class="col-4"&gt;Column 3&lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            Each column occupies 4 out of 12 parts.
+                            Together, the three columns fill the row.
+                        </p>
+
+                    </div>
+
+                    <h3>Making the Grid Responsive</h3>
+
+                    <p>
+                        The real strength of the grid system appears
+                        when we use responsive breakpoints. We can
+                        decide how many columns should appear at
+                        different screen sizes.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example 3: Responsive Columns</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+
+        &lt;div class="col-12 col-md-6 col-lg-4"&gt;
+            Card 1
+        &lt;/div&gt;
+
+        &lt;div class="col-12 col-md-6 col-lg-4"&gt;
+            Card 2
+        &lt;/div&gt;
+
+        &lt;div class="col-12 col-md-6 col-lg-4"&gt;
+            Card 3
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            Here, each card uses the full width
+                            on extra-small screens, half the row
+                            from the medium breakpoint, and one-third
+                            of the row from the large breakpoint.
+                        </p>
+
+                    </div>
+
+                    <h3>What Did I Learn?</h3>
+
+                    <p>
+                        I understood that the grid system is not
+                        simply about dividing a page into equal
+                        pieces. It gives us control over how content
+                        is arranged on different devices.
+                    </p>
+
+                    <blockquote>
+                        A responsive grid allows the same content
+                        to find a suitable layout on different screens.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 07
+                ================================= -->
+
+                <section class="learning-section" id="section7">
+
+                    <span class="section-label">07 / Grid Structure</span>
+
+                    <h2>07. Rows, Columns and Gutters</h2>
+
+                    <p>
+                        While practising the Bootstrap grid system,
+                        I came across three connected concepts:
+                        <strong>Rows, Columns and Gutters.</strong>
+                    </p>
+
+                    <p>
+                        These concepts work together to organise
+                        the layout inside a Bootstrap container.
+                    </p>
+
+                    <h3>1. What Is a Row?</h3>
+
+                    <p>
+                        A row is created using the
+                        <strong>.row</strong> class. It acts as
+                        a horizontal wrapper for columns.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Creating a Row</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+        &lt;!-- Columns are placed here --&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>2. What Is a Column?</h3>
+
+                    <p>
+                        Columns are the sections placed inside
+                        a row. We use classes such as
+                        <strong>.col</strong>, <strong>.col-6</strong>,
+                        or responsive column classes to control
+                        their width.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Row with Columns</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+
+        &lt;div class="col"&gt;
+            First Column
+        &lt;/div&gt;
+
+        &lt;div class="col"&gt;
+            Second Column
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            When equal-width <strong>.col</strong>
+                            classes are used, Bootstrap distributes
+                            the available row space between them.
+                        </p>
+
+                    </div>
+
+                    <h3>3. What Are Gutters?</h3>
+
+                    <p>
+                        Gutters are the spaces between columns.
+                        They help prevent content from appearing
+                        too close together.
+                    </p>
+
+                    <p>
+                        Bootstrap provides gutter utility classes
+                        such as <strong>g-*</strong>,
+                        <strong>gx-*</strong>, and
+                        <strong>gy-*</strong>.
+                    </p>
+
+                    <ul class="learning-list">
+
+                        <li><strong>g-*</strong> controls horizontal and vertical gutters.</li>
+
+                        <li><strong>gx-*</strong> controls horizontal gutters.</li>
+
+                        <li><strong>gy-*</strong> controls vertical gutters.</li>
+
+                    </ul>
+
+                    <div class="code-example">
+
+                        <h4>Example: Using Gutters</h4>
+
+                        <pre><code>&lt;div class="container"&gt;
+
+    &lt;div class="row g-3"&gt;
+
+        &lt;div class="col-md-6"&gt;
+            &lt;div class="p-3 border"&gt;
+                First Box
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-md-6"&gt;
+            &lt;div class="p-3 border"&gt;
+                Second Box
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            The <strong>g-3</strong> class adds
+                            spacing between the grid columns.
+                            The <strong>p-3</strong> class adds
+                            padding inside each box.
+                        </p>
+
+                    </div>
+
+                    <h3>How These Three Concepts Work Together</h3>
+
+                    <p>
+                        I understood the relationship in a simple way:
+                        a container holds the layout, a row organises
+                        the columns horizontally, columns hold the
+                        actual content, and gutters create space
+                        between those columns.
+                    </p>
+
+                    <blockquote>
+                        Container gives the layout its space.
+                        Rows organise the structure.
+                        Columns hold the content.
+                        Gutters make the layout comfortable.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 08
+                ================================= -->
+
+                <section class="learning-section" id="section8">
+
+                    <span class="section-label">08 / My Favourite Component</span>
+
+                    <h2>08. Navbar — My Favourite Component</h2>
+
+                    <p>
+                        Among the Bootstrap components I explored,
+                        the <strong>Navbar</strong> became one
+                        of my favourite components.
+                    </p>
+
+                    <p>
+                        A navigation bar is an important part
+                        of a website because it helps visitors
+                        move between different pages or sections.
+                        It commonly contains a brand name, logo,
+                        navigation links and sometimes buttons
+                        or dropdown menus.
+                    </p>
+
+                    <p>
+                        Bootstrap provides predefined navbar classes
+                        that help us create responsive navigation
+                        structures without writing every styling
+                        rule from the beginning.
+                    </p>
+
+                    <h3>Understanding the Navbar Structure</h3>
+
+                    <ul class="learning-list">
+
+                        <li>
+                            <strong>.navbar:</strong>
+                            Creates the main navigation container.
+                        </li>
+
+                        <li>
+                            <strong>.navbar-brand:</strong>
+                            Styles the website or brand name.
+                        </li>
+
+                        <li>
+                            <strong>.navbar-nav:</strong>
+                            Holds the navigation links.
+                        </li>
+
+                        <li>
+                            <strong>.nav-item:</strong>
+                            Represents an individual navigation item.
+                        </li>
+
+                        <li>
+                            <strong>.nav-link:</strong>
+                            Styles a navigation link.
+                        </li>
+
+                        <li>
+                            <strong>.navbar-toggler:</strong>
+                            Creates the button used to open or close
+                            collapsed navigation.
+                        </li>
+
+                        <li>
+                            <strong>.collapse:</strong>
+                            Controls the collapsible part of the navbar.
+                        </li>
+
+                    </ul>
+
+                    <h3>My First Navbar Example</h3>
+
+                    <div class="code-example">
+
+                        <h4>HTML — Bootstrap Navbar</h4>
+
+                        <pre><code>&lt;nav class="navbar navbar-expand-lg bg-light"&gt;
+
+    &lt;div class="container-fluid"&gt;
+
+        &lt;a class="navbar-brand" href="#"&gt;
+            My Website
+        &lt;/a&gt;
+
+        &lt;button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#myNavbar"&gt;
+
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+
+        &lt;/button&gt;
+
+        &lt;div class="collapse navbar-collapse"
+             id="myNavbar"&gt;
+
+            &lt;ul class="navbar-nav ms-auto"&gt;
+
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link active" href="#"&gt;
+                        Home
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link" href="#"&gt;
+                        About
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link" href="#"&gt;
+                        Contact
+                    &lt;/a&gt;
+                &lt;/li&gt;
+
+            &lt;/ul&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/nav&gt;</code></pre>
+
+                    </div>
+
+                    <h3>Understanding Responsive Navbar Classes</h3>
+
+                    <p>
+                        The class <strong>navbar-expand-lg</strong>
+                        tells Bootstrap when the navbar should expand.
+                        At smaller screen widths, the navigation
+                        links collapse behind the toggler button.
+                        From the large breakpoint onward, the
+                        navigation expands.
+                    </p>
+
+                    <p>
+                        The <strong>data-bs-toggle="collapse"</strong>
+                        and <strong>data-bs-target="#myNavbar"</strong>
+                        attributes connect the toggler button
+                        to the collapsible navigation section.
+                    </p>
+
+                    <p>
+                        The button works when Bootstrap's JavaScript
+                        bundle is included in the webpage.
+                    </p>
+
+                    <h3>Why Did I Like This Component?</h3>
+
+                    <p>
+                        I liked the navbar because it combines
+                        structure, styling and responsive behaviour.
+                        A single component helped me understand
+                        how a website's navigation can adapt
+                        to smaller and larger screens.
+                    </p>
+
+                    <blockquote>
+                        A good navigation bar does more than display
+                        links. It helps users understand where they
+                        are and where they can go next.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 09
+                ================================= -->
+
+                <section class="learning-section" id="section9">
+
+                    <span class="section-label">09 / Interactive Elements</span>
+
+                    <h2>09. Buttons and Button Groups</h2>
+
+                    <p>
+                        After exploring the navbar, I started
+                        looking at other common interface elements.
+                        Buttons are used on almost every website.
+                        They allow users to perform actions such
+                        as submitting a form, opening a page,
+                        saving information or confirming a choice.
+                    </p>
+
+                    <h3>1. Bootstrap Buttons</h3>
+
+                    <p>
+                        Bootstrap provides the basic
+                        <strong>.btn</strong> class and different
+                        contextual classes to change a button's
+                        appearance.
+                    </p>
+
+                    <ul class="learning-list">
+
+                        <li><strong>.btn-primary:</strong> Primary action button.</li>
+                        <li><strong>.btn-secondary:</strong> Secondary action button.</li>
+                        <li><strong>.btn-success:</strong> Success-related button.</li>
+                        <li><strong>.btn-danger:</strong> Destructive or danger-related button.</li>
+                        <li><strong>.btn-warning:</strong> Warning-related button.</li>
+                        <li><strong>.btn-info:</strong> Informational button.</li>
+                        <li><strong>.btn-light:</strong> Light-coloured button.</li>
+                        <li><strong>.btn-dark:</strong> Dark-coloured button.</li>
+                        <li><strong>.btn-link:</strong> Button styled to look like a link.</li>
+
+                    </ul>
+
+                    <div class="code-example">
+
+                        <h4>Example: Different Bootstrap Buttons</h4>
+
+                        <pre><code>&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+
+&lt;button class="btn btn-danger"&gt;Delete&lt;/button&gt;
+
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;</code></pre>
+
+                    </div>
+
+                    <h3>2. Outline Buttons</h3>
+
+                    <p>
+                        Bootstrap also provides outline button classes.
+                        These buttons use a coloured border and text
+                        instead of a solid background by default.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Outline Buttons</h4>
+
+                        <pre><code>&lt;button class="btn btn-outline-primary"&gt;
+    Learn More
+&lt;/button&gt;
+
+&lt;button class="btn btn-outline-success"&gt;
+    Continue
+&lt;/button&gt;</code></pre>
+
+                    </div>
+
+                    <h3>3. Button Sizes</h3>
+
+                    <p>
+                        We can also change the size of buttons
+                        using Bootstrap's size classes.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Button Sizes</h4>
+
+                        <pre><code>&lt;button class="btn btn-primary btn-lg"&gt;
+    Large Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-primary"&gt;
+    Default Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-primary btn-sm"&gt;
+    Small Button
+&lt;/button&gt;</code></pre>
+
+                    </div>
+
+                    <h3>4. What Are Button Groups?</h3>
+
+                    <p>
+                        A button group allows us to place multiple
+                        related buttons together in a single group.
+                        Bootstrap provides the
+                        <strong>.btn-group</strong> class for this.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Button Group</h4>
+
+                        <pre><code>&lt;div class="btn-group" role="group"
+     aria-label="Basic button group"&gt;
+
+    &lt;button type="button" class="btn btn-primary"&gt;
+        HTML
+    &lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-primary"&gt;
+        CSS
+    &lt;/button&gt;
+
+    &lt;button type="button" class="btn btn-primary"&gt;
+        JavaScript
+    &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        Through these examples, I understood how
+                        Bootstrap can provide different button
+                        appearances and organise related actions
+                        using predefined classes.
+                    </p>
+
+                    <blockquote>
+                        Small interface elements matter because
+                        they guide users through the actions
+                        available on a website.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 10
+                ================================= -->
+
+                <section class="learning-section" id="section10">
+
+                    <span class="section-label">10 / Feedback and Interaction</span>
+
+                    <h2>10. Alerts, Badges and Collapse</h2>
+
+                    <p>
+                        While exploring Bootstrap components,
+                        I also learned about alerts, badges
+                        and collapse. These components help
+                        display information and create useful
+                        interactive sections.
+                    </p>
+
+                    <h3>1. Alerts</h3>
+
+                    <p>
+                        Alerts are used to display important
+                        messages to users. For example, a website
+                        may show a success message after a form
+                        has been submitted or a warning when
+                        some information needs attention.
+                    </p>
+
+                    <p>
+                        Bootstrap provides different contextual
+                        alert classes:
+                    </p>
+
+                    <ul class="learning-list">
+                        <li><strong>.alert-primary</strong></li>
+                        <li><strong>.alert-secondary</strong></li>
+                        <li><strong>.alert-success</strong></li>
+                        <li><strong>.alert-danger</strong></li>
+                        <li><strong>.alert-warning</strong></li>
+                        <li><strong>.alert-info</strong></li>
+                        <li><strong>.alert-light</strong></li>
+                        <li><strong>.alert-dark</strong></li>
+                    </ul>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Alert</h4>
+
+                        <pre><code>&lt;div class="alert alert-success" role="alert"&gt;
+    Your message has been submitted successfully!
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>2. Badges</h3>
+
+                    <p>
+                        Badges are small labels used to display
+                        additional information. They can be useful
+                        for showing counts, categories, status
+                        or short labels.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Badge</h4>
+
+                        <pre><code>&lt;h3&gt;
+    Notifications
+    &lt;span class="badge bg-danger"&gt;5&lt;/span&gt;
+&lt;/h3&gt;</code></pre>
+
+                        <p>
+                            Here, the badge displays the number
+                            of notifications beside the heading.
+                        </p>
+
+                    </div>
+
+                    <h3>3. Collapse</h3>
+
+                    <p>
+                        Collapse allows us to show or hide a section
+                        of content when a user clicks a button or
+                        another trigger element.
+                    </p>
+
+                    <p>
+                        This is useful when we want to keep a page
+                        organised and reveal extra information
+                        only when someone needs it.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Collapse</h4>
+
+                        <pre><code>&lt;button class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#moreInfo"&gt;
+
+    Read More
+
+&lt;/button&gt;
+
+&lt;div class="collapse mt-3" id="moreInfo"&gt;
+
+    &lt;div class="card card-body"&gt;
+        Bootstrap helps developers create
+        responsive and reusable interfaces.
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        The button uses
+                        <strong>data-bs-toggle="collapse"</strong>
+                        to activate the collapse behaviour.
+                        The target ID connects it to the content
+                        that should open or close.
+                    </p>
+
+                    <blockquote>
+                        These components helped me understand
+                        that Bootstrap is not limited to visual styling.
+                        It also provides ready-made ways to present
+                        information and interact with users.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 11
+                ================================= -->
+
+                <section class="learning-section" id="section11">
+
+                    <span class="section-label">11 / Interactive Components</span>
+
+                    <h2>11. Dropdowns and Carousel</h2>
+
+                    <p>
+                        As I continued exploring Bootstrap,
+                        I discovered two more useful components:
+                        dropdowns and carousels.
+                    </p>
+
+                    <h3>1. Dropdowns</h3>
+
+                    <p>
+                        A dropdown is a menu that opens when
+                        a user interacts with its trigger.
+                        It is useful when we want to keep
+                        multiple related options together
+                        without displaying all of them
+                        permanently on the page.
+                    </p>
+
+                    <p>
+                        For example, a navigation menu may contain
+                        a Services option with several related links.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Dropdown</h4>
+
+                        <pre><code>&lt;div class="dropdown"&gt;
+
+    &lt;button class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"&gt;
+
+        Services
+
+    &lt;/button&gt;
+
+    &lt;ul class="dropdown-menu"&gt;
+
+        &lt;li&gt;
+            &lt;a class="dropdown-item" href="#"&gt;
+                Web Design
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a class="dropdown-item" href="#"&gt;
+                Development
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a class="dropdown-item" href="#"&gt;
+                UI/UX Design
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>Understanding Important Dropdown Classes</h3>
+
+                    <ul class="learning-list">
+
+                        <li><strong>.dropdown:</strong> wraps the dropdown component.</li>
+
+                        <li><strong>.dropdown-toggle:</strong> gives the trigger button its dropdown indicator.</li>
+
+                        <li><strong>.dropdown-menu:</strong> contains the dropdown options.</li>
+
+                        <li><strong>.dropdown-item:</strong> styles an individual menu item.</li>
+
+                    </ul>
+
+                    <h3>2. Carousel</h3>
+
+                    <p>
+                        A carousel is a slideshow component used
+                        to display a series of images or content
+                        items. Users can move between slides
+                        using previous and next controls.
+                    </p>
+
+                    <p>
+                        I found this component interesting because
+                        it can be used for image galleries,
+                        featured content, banners and product
+                        presentations.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Carousel</h4>
+
+                        <pre><code>&lt;div id="myCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"&gt;
+
+    &lt;div class="carousel-inner"&gt;
+
+        &lt;div class="carousel-item active"&gt;
+            &lt;img src="image1.jpg"
+                 class="d-block w-100"
+                 alt="First slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="image2.jpg"
+                 class="d-block w-100"
+                 alt="Second slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img src="image3.jpg"
+                 class="d-block w-100"
+                 alt="Third slide"&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"&gt;
+
+        &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+
+    &lt;/button&gt;
+
+    &lt;button class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"&gt;
+
+        &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+
+    &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>What Did I Understand?</h3>
+
+                    <p>
+                        Dropdowns help organise options inside
+                        a compact menu, while carousels allow
+                        users to move through multiple slides.
+                        Both components provide useful interaction
+                        without requiring us to create all the
+                        behaviour from scratch.
+                    </p>
+
+                    <blockquote>
+                        A well-designed interface does not need
+                        to display everything at once.
+                        Sometimes, interaction makes information
+                        easier to explore.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 12
+                ================================= -->
+
+                <section class="learning-section" id="section12">
+
+                    <span class="section-label">12 / Organising Content</span>
+
+                    <h2>12. Lists, Tables and Cards</h2>
+
+                    <p>
+                        I also explored Bootstrap classes that help
+                        present information in organised and readable
+                        formats. Lists, tables and cards are useful
+                        when a webpage contains different types
+                        of information.
+                    </p>
+
+                    <h3>1. Lists</h3>
+
+                    <p>
+                        HTML already provides ordered and unordered
+                        lists. Bootstrap adds classes that help
+                        change their appearance.
+                    </p>
+
+                    <p>
+                        For example, <strong>.list-unstyled</strong>
+                        removes the default list styling, while
+                        <strong>.list-inline</strong> and
+                        <strong>.list-inline-item</strong> can
+                        display list items inline.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Inline List</h4>
+
+                        <pre><code>&lt;ul class="list-inline"&gt;
+
+    &lt;li class="list-inline-item"&gt;HTML&lt;/li&gt;
+
+    &lt;li class="list-inline-item"&gt;CSS&lt;/li&gt;
+
+    &lt;li class="list-inline-item"&gt;Bootstrap&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+
+                    <h3>2. Tables</h3>
+
+                    <p>
+                        Tables are useful for presenting information
+                        in rows and columns. Bootstrap provides
+                        table classes that help make tables
+                        more consistent and readable.
+                    </p>
+
+                    <ul class="learning-list">
+
+                        <li><strong>.table:</strong> applies basic Bootstrap table styling.</li>
+
+                        <li><strong>.table-striped:</strong> adds alternating row backgrounds.</li>
+
+                        <li><strong>.table-bordered:</strong> adds borders around table cells.</li>
+
+                        <li><strong>.table-hover:</strong> adds a hover effect to table rows.</li>
+
+                        <li><strong>.table-dark:</strong> applies a dark table appearance.</li>
+
+                        <li><strong>.table-responsive:</strong> allows a table to scroll horizontally when needed.</li>
+
+                    </ul>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Table</h4>
+
+                        <pre><code>&lt;div class="table-responsive"&gt;
+
+    &lt;table class="table table-striped table-hover"&gt;
+
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Technology&lt;/th&gt;
+                &lt;th&gt;Purpose&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+
+        &lt;tbody&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;HTML&lt;/td&gt;
+                &lt;td&gt;Structure&lt;/td&gt;
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;CSS&lt;/td&gt;
+                &lt;td&gt;Styling&lt;/td&gt;
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;Bootstrap&lt;/td&gt;
+                &lt;td&gt;Responsive layouts and components&lt;/td&gt;
+            &lt;/tr&gt;
+
+        &lt;/tbody&gt;
+
+    &lt;/table&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>3. Cards</h3>
+
+                    <p>
+                        Cards are flexible content containers.
+                        They can hold headings, paragraphs,
+                        images, buttons and other HTML elements.
+                    </p>
+
+                    <p>
+                        I found cards useful for layouts such
+                        as product displays, service sections,
+                        profile information and blog previews.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Card</h4>
+
+                        <pre><code>&lt;div class="card" style="width: 18rem;"&gt;
+
+    &lt;div class="card-body"&gt;
+
+        &lt;h5 class="card-title"&gt;
+            Learning Bootstrap
+        &lt;/h5&gt;
+
+        &lt;p class="card-text"&gt;
+            Exploring responsive layouts and components.
+        &lt;/p&gt;
+
+        &lt;a href="#" class="btn btn-primary"&gt;
+            Read More
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <blockquote>
+                        Organising content is just as important
+                        as creating it. A clear presentation
+                        makes information easier to understand.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 13
+                ================================= -->
+
+                <section class="learning-section" id="section13">
+
+                    <span class="section-label">13 / Forms and Dialogues</span>
+
+                    <h2>13. Modals and Forms</h2>
+
+                    <p>
+                        Another useful part of Bootstrap is its
+                        collection of components for collecting
+                        information and displaying additional
+                        content. Two examples I explored were
+                        modals and forms.
+                    </p>
+
+                    <h3>1. Modals</h3>
+
+                    <p>
+                        A modal is a dialog box that appears
+                        above the main page content. It is
+                        commonly used for confirmation messages,
+                        login forms, additional information
+                        or important announcements.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Modal</h4>
+
+                        <pre><code>&lt;button type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"&gt;
+
+    Open Modal
+
+&lt;/button&gt;
+
+&lt;div class="modal fade" id="myModal" tabindex="-1"&gt;
+
+    &lt;div class="modal-dialog"&gt;
+
+        &lt;div class="modal-content"&gt;
+
+            &lt;div class="modal-header"&gt;
+
+                &lt;h5 class="modal-title"&gt;
+                    Welcome
+                &lt;/h5&gt;
+
+                &lt;button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"&gt;
+                &lt;/button&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class="modal-body"&gt;
+                This is my Bootstrap modal.
+            &lt;/div&gt;
+
+            &lt;div class="modal-footer"&gt;
+
+                &lt;button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"&gt;
+                    Close
+                &lt;/button&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        The button opens the modal using
+                        <strong>data-bs-toggle="modal"</strong>.
+                        The <strong>data-bs-target</strong>
+                        attribute identifies the modal that
+                        should appear.
+                    </p>
+
+                    <h3>2. Forms</h3>
+
+                    <p>
+                        Forms allow websites to collect information
+                        from users. Examples include contact forms,
+                        registration forms, login forms and search
+                        fields.
+                    </p>
+
+                    <p>
+                        Bootstrap provides form classes that help
+                        organise labels, inputs, select fields,
+                        checkboxes and buttons.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Bootstrap Contact Form</h4>
+
+                        <pre><code>&lt;form&gt;
+
+    &lt;div class="mb-3"&gt;
+
+        &lt;label for="userName"
+               class="form-label"&gt;
+            Your Name
+        &lt;/label&gt;
+
+        &lt;input type="text"
+               class="form-control"
+               id="userName"
+               placeholder="Enter your name"&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="mb-3"&gt;
+
+        &lt;label for="userEmail"
+               class="form-label"&gt;
+            Email Address
+        &lt;/label&gt;
+
+        &lt;input type="email"
+               class="form-control"
+               id="userEmail"
+               placeholder="Enter your email"&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="mb-3"&gt;
+
+        &lt;label for="userMessage"
+               class="form-label"&gt;
+            Message
+        &lt;/label&gt;
+
+        &lt;textarea class="form-control"
+                  id="userMessage"
+                  rows="3"&gt;&lt;/textarea&gt;
+
+    &lt;/div&gt;
+
+    &lt;button type="submit"
+            class="btn btn-primary"&gt;
+        Submit
+    &lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+
+                    </div>
+
+                    <h3>Some Form Classes I Explored</h3>
+
+                    <ul class="learning-list">
+
+                        <li><strong>.form-label:</strong> styles form labels.</li>
+
+                        <li><strong>.form-control:</strong> styles common input fields and textareas.</li>
+
+                        <li><strong>.form-select:</strong> styles select dropdown fields.</li>
+
+                        <li><strong>.form-check:</strong> helps organise checkboxes and radio buttons.</li>
+
+                        <li><strong>.mb-3:</strong> adds bottom margin to create spacing between form groups.</li>
+
+                    </ul>
+
+                    <blockquote>
+                        Forms collect information, while modals
+                        help present focused information.
+                        Both are useful parts of interactive websites.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 14
+                ================================= -->
+
+                <section class="learning-section" id="section14">
+
+                    <span class="section-label">14 / Working with Utilities</span>
+
+                    <h2>14. Bootstrap Utility Classes</h2>
+
+                    <p>
+                        While practising Bootstrap, I also discovered
+                        utility classes. These classes provide quick
+                        ways to apply common styling properties
+                        directly through HTML class names.
+                    </p>
+
+                    <p>
+                        Instead of writing a separate CSS rule
+                        for every small adjustment, we can use
+                        predefined utility classes for spacing,
+                        text alignment, colours, display and more.
+                    </p>
+
+                    <h3>1. Spacing Utilities</h3>
+
+                    <p>
+                        Bootstrap provides margin and padding
+                        utility classes.
+                    </p>
+
+                    <ul class="learning-list">
+
+                        <li><strong>m:</strong> margin.</li>
+
+                        <li><strong>p:</strong> padding.</li>
+
+                        <li><strong>mt:</strong> margin-top.</li>
+
+                        <li><strong>mb:</strong> margin-bottom.</li>
+
+                        <li><strong>ms:</strong> margin-start.</li>
+
+                        <li><strong>me:</strong> margin-end.</li>
+
+                        <li><strong>px:</strong> horizontal padding.</li>
+
+                        <li><strong>py:</strong> vertical padding.</li>
+
+                    </ul>
+
+                    <div class="code-example">
+
+                        <h4>Example: Spacing Classes</h4>
+
+                        <pre><code>&lt;div class="mt-4 mb-3 p-3"&gt;
+    This box has margin and padding.
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>2. Text Utilities</h3>
+
+                    <p>
+                        Text utilities help control the alignment,
+                        weight, transformation and appearance
+                        of text.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Text Classes</h4>
+
+                        <pre><code>&lt;p class="text-center"&gt;
+    Centred Text
+&lt;/p&gt;
+
+&lt;p class="text-start"&gt;
+    Start Aligned Text
+&lt;/p&gt;
+
+&lt;p class="text-end"&gt;
+    End Aligned Text
+&lt;/p&gt;
+
+&lt;p class="fw-bold"&gt;
+    Bold Text
+&lt;/p&gt;
+
+&lt;p class="text-uppercase"&gt;
+    uppercase text
+&lt;/p&gt;</code></pre>
+
+                    </div>
+
+                    <h3>3. Background and Text Colours</h3>
+
+                    <p>
+                        Bootstrap provides contextual colour
+                        utility classes for backgrounds and text.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Colour Utilities</h4>
+
+                        <pre><code>&lt;div class="bg-primary text-white p-3"&gt;
+    Primary Background
+&lt;/div&gt;
+
+&lt;div class="bg-success text-white p-3"&gt;
+    Success Background
+&lt;/div&gt;
+
+&lt;p class="text-danger"&gt;
+    Important Message
+&lt;/p&gt;</code></pre>
+
+                    </div>
+
+                    <h3>4. Display Utilities</h3>
+
+                    <p>
+                        Display utilities help control how elements
+                        are displayed. For example, we can use
+                        classes such as <strong>.d-none</strong>,
+                        <strong>.d-block</strong> and
+                        <strong>.d-flex</strong>.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Display Classes</h4>
+
+                        <pre><code>&lt;div class="d-none"&gt;
+    Hidden Element
+&lt;/div&gt;
+
+&lt;div class="d-block"&gt;
+    Block Element
+&lt;/div&gt;
+
+&lt;div class="d-flex"&gt;
+    Flexible Layout
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <h3>5. Responsive Utility Classes</h3>
+
+                    <p>
+                        Many Bootstrap utilities can also be
+                        applied at responsive breakpoints.
+                        For example, a display utility can
+                        behave differently on smaller and
+                        larger screens.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>Example: Responsive Display</h4>
+
+                        <pre><code>&lt;div class="d-none d-md-block"&gt;
+    Visible from the medium breakpoint onward.
+&lt;/div&gt;</code></pre>
+
+                    </div>
+
+                    <p>
+                        Here, the element is hidden by default
+                        and becomes a block element from the
+                        medium breakpoint onward.
+                    </p>
+
+                    <blockquote>
+                        Utility classes helped me understand
+                        how small styling changes can be made
+                        quickly without writing a new CSS rule
+                        every time.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 15
+                ================================= -->
+
+                <section class="learning-section" id="section15">
+
+                    <span class="section-label">15 / My Learning Approach</span>
+
+                    <h2>15. My Practice Philosophy</h2>
+
+                    <p>
+                        While learning Bootstrap, I realised
+                        that simply reading class names and
+                        copying code examples would not be
+                        enough to build a strong understanding.
+                    </p>
+
+                    <p>
+                        I wanted to know what happens when
+                        I apply a class, how the output changes,
+                        and why one class may be more suitable
+                        than another in a particular situation.
+                    </p>
+
+                    <h3>My Learning Method: Practise and Observe</h3>
+
+                    <p>
+                        My approach is to start with a simple
+                        HTML structure, apply a Bootstrap class,
+                        observe the result and then experiment
+                        with other classes.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h4>My Practice Process</h4>
+
+                        <ol>
+                            <li>Start with a simple HTML structure.</li>
+                            <li>Apply one Bootstrap class.</li>
+                            <li>Open the page in the browser.</li>
+                            <li>Observe what changes in the output.</li>
+                            <li>Try another class or class variation.</li>
+                            <li>Compare the results and understand the difference.</li>
+                            <li>Use the class in a small practical layout.</li>
+                        </ol>
+
+                    </div>
+
+                    <h3>Why Do I Prefer Simple HTML First?</h3>
+
+                    <p>
+                        When I begin with a simple structure,
+                        I can focus on understanding one class
+                        at a time. If I add too many classes
+                        together without understanding them,
+                        it becomes difficult to identify which
+                        class is responsible for a particular change.
+                    </p>
+
+                    <p>
+                        For example, if I want to understand
+                        Bootstrap spacing, I can begin with
+                        a simple div and try different margin
+                        and padding classes.
+                    </p>
+
+                    <div class="code-example">
+
+                        <h4>My Small Practice Example</h4>
+
+                        <pre><code>&lt;div class="p-2"&gt;
+    Box with small padding
+&lt;/div&gt;
+
+&lt;div class="p-4"&gt;
+    Box with more padding
+&lt;/div&gt;
+
+&lt;div class="p-5"&gt;
+    Box with even more padding
+&lt;/div&gt;</code></pre>
+
+                        <p>
+                            By comparing these examples,
+                            I can recognise how the spacing
+                            changes when the utility value
+                            increases.
+                        </p>
+
+                    </div>
+
+                    <h3>My Personal Rule</h3>
+
+                    <blockquote>
+                        Practice, recognise the performance,
+                        then increase or decrease the level
+                        of each class by using a simple
+                        HTML structure.
+                    </blockquote>
+
+                    <p>
+                        I believe this approach helps me
+                        understand the purpose of a class
+                        instead of memorising its name.
+                        It also gives me the confidence
+                        to experiment and build layouts
+                        independently.
+                    </p>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 16
+                ================================= -->
+
+                <section class="learning-section" id="section16">
+
+                    <span class="section-label">16 / My Learning Resources</span>
+
+                    <h2>16. My Learning Resources</h2>
+
+                    <p>
+                        During my Bootstrap learning journey,
+                        I explored learning resources that helped
+                        me understand the framework's layout
+                        classes and components.
+                    </p>
+
+                    <p>
+                        I believe documentation and tutorials
+                        are useful when we do not simply copy
+                        the code but try to understand what
+                        each class or component is designed
+                        to do.
+                    </p>
+
+                    <h3>Bootstrap Official Documentation</h3>
+
+                    <p>
+                        The official Bootstrap documentation
+                        is a useful place to explore its
+                        components, utilities, layout system
+                        and practical examples.
+                    </p>
+
+                    <p>
+                        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Explore Bootstrap 5.3 Documentation
+                        </a>
+                    </p>
+
+                    <h3>GeeksforGeeks — Bootstrap Containers</h3>
+
+                    <p>
+                        I also referred to GeeksforGeeks to
+                        understand Bootstrap layout containers
+                        and how different container classes
+                        control the available content width.
+                    </p>
+
+                    <p>
+                        <a href="https://www.geeksforgeeks.org/bootstrap/bootstrap-5-layout-containers/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read: Bootstrap 5 Layout Containers
+                        </a>
+                    </p>
+
+                    <h3>How I Use Learning Resources</h3>
+
+                    <ul class="learning-list">
+
+                        <li>Read the concept before using its class.</li>
+
+                        <li>Understand the purpose of the class or component.</li>
+
+                        <li>Study the provided HTML example.</li>
+
+                        <li>Try the same example in my own practice file.</li>
+
+                        <li>Change values and compare the browser output.</li>
+
+                        <li>Return to the documentation whenever I need clarification.</li>
+
+                    </ul>
+
+                    <blockquote>
+                        A resource gives us direction, but practice
+                        helps us turn information into understanding.
+                    </blockquote>
+
+                </section>
+
+
+                <!-- =================================
+                     SECTION 17 / CONCLUSION
+                ================================= -->
+
+                <section class="learning-section" id="conclusion">
+
+                    <span class="section-label">17 / Journey Completed</span>
+
+                    <h2>17. My Third Handshake — A New Perspective</h2>
+
+                    <p>
+                        My third handshake with responsiveness
+                        introduced me to a new way of thinking
+                        about website layouts and user experiences.
+                    </p>
+
+                    <p>
+                        I started by understanding that a website
+                        should not be designed for only one screen.
+                        It should provide a comfortable experience
+                        to users across different devices.
+                    </p>
+
+                    <p>
+                        While exploring Bootstrap, I discovered
+                        how containers, grid systems, rows,
+                        columns, gutters and responsive classes
+                        help organise a webpage.
+                    </p>
+
+                    <p>
+                        I also explored components such as navbars,
+                        buttons, alerts, badges, collapse,
+                        dropdowns, carousels, lists, tables,
+                        cards, modals and forms.
+                    </p>
+
+                    <h3>What I Am Taking Forward</h3>
+
+                    <ul class="learning-list">
+
+                        <li>A better understanding of responsive web layouts.</li>
+
+                        <li>Knowledge of Bootstrap containers and its grid system.</li>
+
+                        <li>Experience with rows, columns and gutters.</li>
+
+                        <li>Familiarity with commonly used Bootstrap components.</li>
+
+                        <li>An understanding of how utility classes reduce repetitive styling work.</li>
+
+                        <li>A practice-based approach to learning and experimenting with classes.</li>
+
+                    </ul>
+
+                    <h3>My Final Realisation</h3>
+
+                    <p>
+                        Bootstrap helped me understand that
+                        responsive development can become
+                        more organised when we know how to use
+                        predefined classes and components.
+                    </p>
+
+                    <p>
+                        However, I also learned that a framework
+                        does not replace the need to understand
+                        HTML, CSS, layouts or design principles.
+                        It gives us tools, but we still need
+                        to understand how and when to use them.
+                    </p>
+
+                    <blockquote>
+                        I started by learning how to structure
+                        a webpage. Then I explored how to make
+                        it interactive. Now I am learning how
+                        to make it responsive and comfortable
+                        for everyone.
+                    </blockquote>
+
+                    <h3>What's Next in My Learning Journey?</h3>
+
+                    <p>
+                        I want to continue practising Bootstrap
+                        and use its classes in real website
+                        layouts. My next step is to combine
+                        what I have learned with my existing
+                        HTML, CSS and JavaScript knowledge
+                        and keep improving through practical work.
+                    </p>
+
+                    <p>
+                        Every new concept gives me another
+                        opportunity to experiment, make
+                        improvements and grow as a developer.
+                    </p>
+
+                    <blockquote>
+                        Learn it. Understand it. Practise it.
+                        Build with it. And never stop exploring.
+                    </blockquote>
+
+                    <p>
+                        <strong>
+                            Thank you for being part of my
+                            learning journey!
+                        </strong>
+                    </p>
+
+                </section>
+
+
+                <!-- =================================
+                     ABOUT THE AUTHOR
+                ================================= -->
+
+                <div class="author-note" id="about-author">
+
+                    <h3>About the Author</h3>
+
+                    <p>
+                        Hi, I'm Pooja Vartia, a Computer Applications
+                        graduate and self-learning web developer.
+                        Through these coding blogs, I share my
+                        learning experiences, practical experiments,
+                        discoveries and progress in web development.
+                    </p>
+
+                </div>
+
+
+            </article>
+
+<!-- SECTION 02: DISCOVERING BOOTSTRAP -->
+<section class="learning-section" id="section2">
+
+    <span class="section-label">02 — A New Discovery</span>
+
+    <h2>Discovering Bootstrap</h2>
+
+    <p>
+        While exploring responsive web design, I started looking for
+        a better way to make websites adjust to different screen sizes.
+        I wanted to understand how developers create layouts that look
+        organised on mobile phones, tablets, laptops and desktops.
+    </p>
+
+    <p>
+        During this learning journey, I discovered <strong>Bootstrap</strong>.
+        It introduced me to a new approach to web development where
+        predefined classes and ready-made components make it easier
+        to build responsive and well-structured websites.
+    </p>
+
+    <p>
+        Before exploring Bootstrap, I was learning how to manage
+        website layouts and styling using HTML and CSS. Bootstrap
+        helped me understand how many common design tasks could be
+        handled through its existing classes instead of writing
+        everything from scratch.
+    </p>
+
+    <blockquote>
+        "Sometimes, learning a new tool does not change what you want
+        to build — it changes how efficiently you can build it."
+    </blockquote>
+
+    <p>
+        This discovery made me curious to explore more. I wanted to
+        learn how Bootstrap works, how its classes are used and how
+        its components help developers create responsive interfaces.
+    </p>
+
+    <p>
+        That is where my Bootstrap learning journey truly began.
+    </p>
+
+</section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 WebWorldWithPooja | Learning, Creating and Growing.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>

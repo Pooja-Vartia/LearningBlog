@@ -1,0 +1,3885 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="My Fourth Handshake with PHP — exploring PHP fundamentals, XAMPP, functions, arrays and form handling through my learning journey.">
+
+    <title>My Fourth Handshake with PHP | Coding Blogs</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Your Blog CSS Files -->
+    <link rel="stylesheet" href="BlogDesign.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <div class="header-container">
+
+            <p class="website-name">webworldwithpooja</p>
+
+            <a href="index.html" class="logo">
+                Coding<span>Blogs</span>
+            </a>
+
+            <nav class="navbar">
+                 <a href="#home">Home</a>
+                <a href="#content">Contact</a>
+                <a href="#article">Article</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN ARTICLE ================= -->
+
+    <main class="main-container" id="article">
+
+        <!-- ARTICLE INTRODUCTION -->
+
+        <section class="article-intro">
+
+            <span class="category">
+                MY LEARNING JOURNEY · 04
+            </span>
+
+            <h1>My Fourth Handshake with PHP</h1>
+
+            <p class="subtitle">
+                From Static Web Pages to Server-Side Thinking
+            </p>
+
+            <div class="article-meta">
+                <span>By Pooja Vartia</span>
+                <span>PHP & Backend Development</span>
+                <span>Beginner Learning Series</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ARTICLE LAYOUT ================= -->
+
+        <div class="article-layout">
+
+
+            <!-- LEFT SIDEBAR / TABLE OF CONTENTS -->
+
+            <aside class="sidebar" id="contents">
+
+                <h3>PHP Learning Chapters</h3>
+
+                <ul>
+
+                    <li><a href="#section01">01. Where My PHP Journey Began</a></li>
+
+                    <li><a href="#section02">02. The History and Origin of PHP</a></li>
+
+                    <li><a href="#section03">03. Understanding PHP as a Scripting Language</a></li>
+
+                    <li><a href="#section04">04. What Does PHP Stand For?</a></li>
+
+                    <li><a href="#section05">05. Setting Up a Local Server with XAMPP</a></li>
+
+                    <li><a href="#section06">06. Understanding the Components of XAMPP</a></li>
+
+                    <li><a href="#section07">07. Understanding the Structure of a PHP Program</a></li>
+
+                    <li><a href="#section08">08. Why Do We Use the PHP Tags?</a></li>
+
+                    <li><a href="#section09">09. Displaying Output with echo</a></li>
+
+                    <li><a href="#section10">10. Variables and Loosely Typed Behaviour in PHP</a></li>
+
+                    <li><a href="#section11">11. Expressions and Operators in PHP</a></li>
+
+                    <li><a href="#section12">12. Conditional Statements — Teaching PHP to Make Decisions</a></li>
+
+                    <li><a href="#section13">13. Prime Number or Not — A Practical Example</a></li>
+
+                    <li><a href="#section14">14. String Concatenation in PHP</a></li>
+
+                    <li><a href="#section15">15. Useful PHP String Functions</a></li>
+
+                    <li><a href="#section16">16. Looping Statements in PHP</a></li>
+
+                    <li><a href="#section17">17. PHP Functions — Reusing Code</a></li>
+
+                    <li><a href="#section18">18. Function Arguments and Default Values</a></li>
+
+                    <li><a href="#section19">19. Pass by Value and Pass by Reference</a></li>
+
+                    <li><a href="#section20">20. Returning Values and the return Keyword</a></li>
+
+                    <li><a href="#section21">21. Understanding Arrays in PHP</a></li>
+
+                    <li><a href="#section22">22. Indexed Arrays and print_r()</a></li>
+
+                    <li><a href="#section23">23. Associative and Multidimensional Arrays</a></li>
+
+                    <li><a href="#section24">24. Traversing Arrays with foreach</a></li>
+
+                    <li><a href="#section25">25. Adding and Removing Array Items</a></li>
+
+                    <li><a href="#section26">26. Joining and Splitting Strings</a></li>
+
+                    <li><a href="#section27">27. Working with Date and Time in PHP</a></li>
+
+                    <li><a href="#section28">28. Receiving Form Data with $_POST</a></li>
+
+                    <li><a href="#section29">29. My Learning Resources</a></li>
+
+                    <li><a href="#section30">30. My Fourth Handshake — Conclusion</a></li>
+
+                </ul>
+
+            </aside>
+
+
+            <!-- ================= ARTICLE CONTENT STARTS ================= -->
+
+            <article class="article-content">
+
+                <div class="opening-quote">
+
+                    Every new technology opens another door in my web development journey.
+
+                    After learning how to structure, style, animate and make webpages responsive,
+                    I am now exploring how websites process information behind the scenes —
+                    with PHP.
+
+                </div>
+
+                <!-- SECTION 01 -->
+
+                <section class="article-section" id="section01">
+
+                    <h2>01. Where My PHP Journey Began</h2>
+
+                    <p>
+                        After exploring HTML, CSS, JavaScript and Bootstrap, I started
+                        understanding that creating a website is not only about what
+                        visitors can see on their screens. There is another important
+                        part that works behind the scenes.
+                    </p>
+
+                    <p>
+                        Until now, I had mainly worked with the frontend — creating
+                        webpage structures, styling elements, adding interactions and
+                        making layouts responsive. But I wanted to understand something
+                        more: How does a website receive information from users? How
+                        does it process form data? And how can information be stored
+                        and retrieved from a database?
+                    </p>
+
+                    <p>
+                        This is where my journey with PHP began.
+                    </p>
+
+                    <p>
+                        PHP introduced me to server-side programming. I started
+                        learning how a website can communicate with a server, process
+                        user requests, work with databases and generate dynamic
+                        webpage content.
+                    </p>
+
+                    <div class="author-note">
+                        <strong>My learning thought:</strong>
+                        A frontend gives a website its visible experience, but
+                        backend programming helps it perform meaningful tasks.
+                        I was now stepping into a new side of web development.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 02 -->
+
+                <section class="article-section" id="section02">
+
+                    <h2>02. The History and Origin of PHP</h2>
+
+                    <p>
+                        Before writing my first PHP program, I wanted to understand
+                        where PHP came from and why it was created.
+                    </p>
+
+                    <p>
+                        PHP was originally created by <strong>Rasmus Lerdorf</strong>
+                        in 1994. Initially, he wrote a collection of CGI programs in
+                        the C programming language to maintain his personal homepage.
+                    </p>
+
+                    <p>
+                        Later, he wanted to extend those programs so that his
+                        homepage could interact with web forms and communicate with
+                        databases. This requirement led to the development of a
+                        more useful set of tools.
+                    </p>
+
+                    <h3>Personal Home Page Tools</h3>
+
+                    <p>
+                        The original tools were known as
+                        <strong>Personal Home Page Tools</strong>. They helped
+                        manage a personal website and handle information submitted
+                        through web forms.
+                    </p>
+
+                    <h3>PHP/FI — Forms Interpreter</h3>
+
+                    <p>
+                        The project later developed into PHP/FI, where FI stood
+                        for <strong>Forms Interpreter</strong>. It provided more
+                        capabilities for processing form data and interacting
+                        with databases.
+                    </p>
+
+                    <h3>How did PHP get its current name?</h3>
+
+                    <p>
+                        As PHP continued to develop, it became a more powerful
+                        server-side scripting language. PHP 3 introduced the
+                        recursive acronym:
+                        <strong>PHP: Hypertext Preprocessor</strong>.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h3>My historical understanding</h3>
+
+                        <ul>
+                            <li>1994 — Rasmus Lerdorf created the original PHP tools.</li>
+                            <li>Personal Home Page — The original purpose was managing a personal homepage.</li>
+                            <li>PHP/FI — The tools evolved to handle forms and database communication.</li>
+                            <li>PHP 3 — The name PHP: Hypertext Preprocessor became established.</li>
+                        </ul>
+
+                    </div>
+
+                    <p>
+                        This history helped me understand that PHP was not initially
+                        designed as the large web development language we use today.
+                        It evolved to solve practical problems related to websites.
+                    </p>
+
+                </section>
+
+
+                <!-- SECTION 03 -->
+
+                <section class="article-section" id="section03">
+
+                    <h2>03. Understanding PHP as a Scripting Language</h2>
+
+                    <p>
+                        While learning PHP, I came across the term
+                        <strong>scripting language</strong>. Before understanding
+                        PHP, I first wanted to understand what a script actually means.
+                    </p>
+
+                    <h3>What is a script?</h3>
+
+                    <p>
+                        A script is a set of instructions written to perform a
+                        particular task. These instructions tell a computer what
+                        action to perform and in which order.
+                    </p>
+
+                    <p>
+                        For example, when a visitor submits a contact form, a
+                        PHP script can receive the submitted information, validate
+                        it and save it into a database.
+                    </p>
+
+                    <h3>What is a scripting language?</h3>
+
+                    <p>
+                        A scripting language is a programming language commonly
+                        used to write instructions that are executed by a runtime
+                        environment or interpreter.
+                    </p>
+
+                    <p>
+                        PHP is a server-side scripting language. This means its
+                        code normally runs on a web server rather than directly
+                        inside the visitor's browser.
+                    </p>
+
+                    <h3>How does PHP work?</h3>
+
+                    <ol>
+                        <li>A visitor requests a PHP webpage through a browser.</li>
+                        <li>The web server receives the request.</li>
+                        <li>The PHP interpreter executes the PHP code.</li>
+                        <li>The server prepares the resulting output, commonly HTML.</li>
+                        <li>The browser receives and displays that output.</li>
+                    </ol>
+
+                    <div class="learning-example">
+
+                        <h3>Understanding the difference</h3>
+
+                        <p><strong>JavaScript in the browser:</strong></p>
+
+                        <p>
+                            It can respond to user actions, update webpage content
+                            and create interactive experiences on the client side.
+                        </p>
+
+                        <p><strong>PHP on the server:</strong></p>
+
+                        <p>
+                            It can process submitted information, communicate with
+                            databases, manage sessions and generate webpage output.
+                        </p>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        PHP works behind the scenes. Visitors generally receive
+                        the output generated by PHP, not the original PHP source code.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 04 -->
+
+                <section class="article-section" id="section04">
+
+                    <h2>04. What Does PHP Stand For?</h2>
+
+                    <p>
+                        One of the first things I learned about PHP was its full form.
+                    </p>
+
+                    <h3>PHP: Hypertext Preprocessor</h3>
+
+                    <p>
+                        PHP is a recursive acronym. It means that the abbreviation
+                        PHP appears again inside its own full form.
+                    </p>
+
+                    <p>
+                        PHP is mainly used for server-side web development. It can
+                        generate dynamic HTML pages, process form submissions,
+                        communicate with databases and manage server-side sessions.
+                    </p>
+
+                    <h3>Why is it called a server-side language?</h3>
+
+                    <p>
+                        Because PHP code is generally executed on the server.
+                        After execution, the server sends the generated response
+                        to the visitor's browser.
+                    </p>
+
+                    <p>
+                        For example, a website can display a different welcome
+                        message depending on the currently logged-in user.
+                        PHP can help generate that personalized output.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h3>Where can PHP be used?</h3>
+
+                        <ul>
+                            <li>Login and registration systems</li>
+                            <li>Contact forms</li>
+                            <li>Database operations</li>
+                            <li>Dynamic webpages</li>
+                            <li>Session management</li>
+                            <li>Content management systems</li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 05 -->
+
+                <section class="article-section" id="section05">
+
+                    <h2>05. Setting Up a Local Server with XAMPP</h2>
+
+                    <p>
+                        After understanding what PHP is, my next step was to
+                        learn where and how PHP programs are executed.
+                    </p>
+
+                    <p>
+                        Unlike a simple HTML file that can be opened directly
+                        in a browser, PHP needs a PHP-enabled server environment
+                        to execute its code.
+                    </p>
+
+                    <h3>What is a local server?</h3>
+
+                    <p>
+                        A local server is a server environment running on our
+                        own computer. It allows us to develop and test websites
+                        without publishing them on the internet.
+                    </p>
+
+                    <p>
+                        During my learning process, I used XAMPP to create a
+                        local development environment.
+                    </p>
+
+                    <h3>What is XAMPP?</h3>
+
+                    <p>
+                        XAMPP is a free and open-source package that provides
+                        the main tools required to run and test dynamic websites
+                        locally.
+                    </p>
+
+                    <p>
+                        Its name represents the main technologies included
+                        in the package.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h3>Full form of XAMPP</h3>
+
+                        <ul>
+                            <li><strong>X</strong> — Cross-platform</li>
+                            <li><strong>A</strong> — Apache</li>
+                            <li><strong>M</strong> — MySQL (commonly MariaDB in current XAMPP distributions)</li>
+                            <li><strong>P</strong> — PHP</li>
+                            <li><strong>P</strong> — Perl</li>
+                        </ul>
+
+                    </div>
+
+                    <h3>How did I use XAMPP?</h3>
+
+                    <ol>
+                        <li>First, I installed XAMPP on my computer.</li>
+                        <li>I opened the XAMPP Control Panel.</li>
+                        <li>I started the Apache server.</li>
+                        <li>I started MySQL when database functionality was required.</li>
+                        <li>I placed my PHP project inside the htdocs folder.</li>
+                        <li>I opened the project through localhost in my browser.</li>
+                    </ol>
+
+                    <h3>Understanding localhost</h3>
+
+                    <p>
+                        Localhost refers to the computer on which the server
+                        is running. It is commonly associated with the IP
+                        address 127.0.0.1.
+                    </p>
+
+                    <p>
+                        For example, if my project folder is named
+                        <strong>MyPHPProject</strong>, I can access it using:
+                    </p>
+
+                    <div class="code-example">
+
+                        <pre><code>http://localhost/MyPHPProject/</code></pre>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>My learning experience:</strong>
+                        XAMPP helped me understand how a local computer can
+                        behave like a web server and execute PHP programs
+                        before a website is deployed online.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 06 -->
+
+                <section class="article-section" id="section06">
+
+                    <h2>06. Understanding the Components of XAMPP</h2>
+
+                    <p>
+                        After installing XAMPP, I wanted to understand what
+                        each component actually does. Knowing their individual
+                        responsibilities made the complete server environment
+                        easier to understand.
+                    </p>
+
+                    <h3>1. Apache — The Web Server</h3>
+
+                    <p>
+                        Apache is a web server software. It receives requests
+                        from browsers and helps deliver the requested webpage
+                        or other resources.
+                    </p>
+
+                    <p>
+                        When I access a PHP project through localhost, Apache
+                        receives the browser request and works with PHP to
+                        process the PHP page.
+                    </p>
+
+                    <h3>2. MySQL / MariaDB — The Database Server</h3>
+
+                    <p>
+                        A database is used to store and organize information.
+                        MySQL is a relational database management system.
+                        Current XAMPP distributions commonly include MariaDB,
+                        which is compatible with many MySQL workflows.
+                    </p>
+
+                    <p>
+                        For example, a registration form can collect a user's
+                        name, email and password. PHP can process that
+                        information and store it in a database.
+                    </p>
+
+                    <h3>3. PHP — The Server-Side Language</h3>
+
+                    <p>
+                        PHP is the scripting language used to write the
+                        server-side logic of a website.
+                    </p>
+
+                    <p>
+                        It can receive form data, validate information,
+                        perform calculations, communicate with databases
+                        and generate dynamic webpage content.
+                    </p>
+
+                    <h3>4. Perl — Another Programming Language</h3>
+
+                    <p>
+                        Perl is a programming language that can also be
+                        included in the XAMPP package. It is useful for
+                        scripting and text-processing tasks.
+                    </p>
+
+                    <h3>5. Cross-platform</h3>
+
+                    <p>
+                        The letter X represents cross-platform. It indicates
+                        that XAMPP is available for multiple operating systems,
+                        including Windows, Linux and macOS.
+                    </p>
+
+                    <div class="learning-example">
+
+                        <h3>Quick comparison of XAMPP components</h3>
+
+                        <ul>
+                            <li><strong>Apache:</strong> Handles web requests.</li>
+                            <li><strong>MySQL / MariaDB:</strong> Stores and manages data.</li>
+                            <li><strong>PHP:</strong> Executes server-side application logic.</li>
+                            <li><strong>Perl:</strong> Provides another scripting language.</li>
+                            <li><strong>Cross-platform:</strong> Supports different operating systems.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        These components work together to provide a local
+                        environment where I can develop, test and run
+                        dynamic PHP websites.
+                    </div>
+
+                </section>
+
+                <!-- SECTION 07 -->
+
+                <section class="article-section" id="section07">
+
+                    <h2>07. Understanding the Structure of a PHP Program</h2>
+
+                    <p>
+                        After setting up my local server using XAMPP, I was ready
+                        to write my first PHP program. Before writing different
+                        instructions, I first needed to understand how a PHP
+                        program is structured.
+                    </p>
+
+                    <p>
+                        PHP code is generally written inside a PHP file with the
+                        <strong>.php</strong> extension. A PHP file can contain
+                        HTML, CSS, JavaScript and PHP code together.
+                    </p>
+
+                    <h3>My First PHP Program</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+echo "Hello World!";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the code step by step</h3>
+
+                    <ul>
+                        <li>
+                            <strong>&lt;?php</strong> — It tells the PHP interpreter
+                            that PHP code begins here.
+                        </li>
+                        <li>
+                            <strong>echo</strong> — It is used to display output.
+                        </li>
+                        <li>
+                            <strong>"Hello World!"</strong> — This is the string
+                            value that we want to display.
+                        </li>
+                        <li>
+                            <strong>;</strong> — It marks the end of the PHP statement.
+                        </li>
+                        <li>
+                            <strong>?&gt;</strong> — It marks the end of a PHP code
+                            block when a closing tag is needed.
+                        </li>
+                    </ul>
+
+                    <h3>Where do I save this program?</h3>
+
+                    <p>
+                        I save my file with a .php extension, for example:
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>firstprogram.php</code></pre>
+                    </div>
+
+                    <p>
+                        Then I place it inside the XAMPP htdocs folder and run
+                        it through localhost:
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>http://localhost/firstprogram.php</code></pre>
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        A PHP program is not simply opened like an ordinary
+                        static HTML file. It needs a PHP-enabled server
+                        environment to execute its server-side instructions.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 08 -->
+
+                <section class="article-section" id="section08">
+
+                    <h2>08. Why Do We Use the PHP Tags?</h2>
+
+                    <p>
+                        While writing PHP code, I noticed that it starts with
+                        a special opening tag and sometimes ends with a closing
+                        tag. I wanted to understand why these tags are necessary.
+                    </p>
+
+                    <h3>Opening PHP Tag</h3>
+
+                    <p>
+                        The opening tag <strong>&lt;?php</strong> tells the PHP
+                        interpreter where PHP code starts.
+                    </p>
+
+                    <h3>Closing PHP Tag</h3>
+
+                    <p>
+                        The closing tag <strong>?&gt;</strong> tells the PHP
+                        interpreter where the PHP code block ends. After it,
+                        the file can contain ordinary HTML.
+                    </p>
+
+                    <h3>Combining PHP and HTML</h3>
+
+                    <p>
+                        One useful feature of PHP is that we can write PHP
+                        and HTML in the same file. This helps us generate
+                        dynamic webpage content.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;My PHP Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+    &lt;?php
+        echo "This message is generated using PHP.";
+    ?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+
+                    <h3>Can we omit the closing PHP tag?</h3>
+
+                    <p>
+                        Yes. When a PHP file contains only PHP code, the
+                        closing PHP tag is commonly omitted. This helps
+                        avoid accidental whitespace or unwanted output
+                        after the PHP code.
+                    </p>
+
+                    <div class="author-note">
+                        <strong>What I learned:</strong>
+                        PHP tags separate server-side PHP instructions
+                        from ordinary HTML content. They allow both
+                        technologies to work together in one webpage.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 09 -->
+
+                <section class="article-section" id="section09">
+
+                    <h2>09. Displaying Output with echo</h2>
+
+                    <p>
+                        Once I understood the PHP structure, my next step
+                        was learning how to display information on a webpage.
+                        In PHP, one of the most commonly used language
+                        constructs for displaying output is
+                        <strong>echo</strong>.
+                    </p>
+
+                    <h3>What is echo?</h3>
+
+                    <p>
+                        The echo construct is used to send one or more
+                        expressions to the output. That output can be
+                        displayed by the browser when the server returns
+                        the generated webpage.
+                    </p>
+
+                    <h3>Example 1: Displaying text</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+echo "Hello, Pooja!";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Example 2: Displaying HTML using echo</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+echo "&lt;h2&gt;Learning PHP&lt;/h2&gt;";
+echo "&lt;p&gt;This is my PHP learning journey.&lt;/p&gt;";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Example 3: Displaying multiple values</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+echo "My name is ", "Pooja", " Vartia.";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Important points about echo</h3>
+
+                    <ul>
+                        <li>echo is a PHP language construct.</li>
+                        <li>It can display strings, variables and expressions.</li>
+                        <li>It can output multiple comma-separated arguments.</li>
+                        <li>It does not return a value like an ordinary function.</li>
+                        <li>A semicolon normally ends the PHP statement.</li>
+                    </ul>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        echo is useful whenever I want PHP to generate
+                        visible webpage output, such as headings,
+                        messages or dynamic values.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 10 -->
+
+                <section class="article-section" id="section10">
+
+                    <h2>10. Variables and Loosely Typed Behaviour in PHP</h2>
+
+                    <p>
+                        After learning how to display output, I moved
+                        towards variables. Variables allow us to store
+                        information and use it whenever required.
+                    </p>
+
+                    <h3>What is a variable?</h3>
+
+                    <p>
+                        A variable is a named storage location used
+                        to hold a value during program execution.
+                        In PHP, every variable begins with a dollar
+                        sign (<strong>$</strong>).
+                    </p>
+
+                    <h3>Creating variables in PHP</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$name = "Pooja";
+$age = 22;
+$percentage = 85.5;
+$isLearning = true;
+
+echo $name;
+echo $age;
+echo $percentage;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the variable values</h3>
+
+                    <ul>
+                        <li><strong>$name</strong> stores a string value.</li>
+                        <li><strong>$age</strong> stores an integer.</li>
+                        <li><strong>$percentage</strong> stores a floating-point number.</li>
+                        <li><strong>$isLearning</strong> stores a Boolean value.</li>
+                    </ul>
+
+                    <h3>Why is PHP called a loosely typed language?</h3>
+
+                    <p>
+                        PHP is dynamically typed. It means we generally
+                        do not need to declare the data type of a variable
+                        before assigning a value to it. PHP determines
+                        the variable's type from the value assigned.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$value = 100;
+
+echo $value;
+
+$value = "Hello PHP";
+
+echo $value;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        In this example, the same variable first holds
+                        an integer and later holds a string. PHP allows
+                        this because variable types are determined
+                        dynamically.
+                    </p>
+
+                    <h3>Common data types in PHP</h3>
+
+                    <ul>
+                        <li><strong>Integer:</strong> Whole numbers, such as 25.</li>
+                        <li><strong>Float:</strong> Decimal numbers, such as 25.5.</li>
+                        <li><strong>String:</strong> Text values, such as "Hello".</li>
+                        <li><strong>Boolean:</strong> true or false.</li>
+                        <li><strong>Array:</strong> A collection of values.</li>
+                        <li><strong>Object:</strong> An instance of a class.</li>
+                        <li><strong>NULL:</strong> Represents a variable with no value.</li>
+                    </ul>
+
+                    <h3>Checking a variable's type</h3>
+
+                    <p>
+                        PHP provides the gettype() function to identify
+                        the type of a variable.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$age = 22;
+
+echo gettype($age);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Rules for naming PHP variables</h3>
+
+                    <ul>
+                        <li>A variable must begin with the $ symbol.</li>
+                        <li>The first character after $ must be a letter or underscore.</li>
+                        <li>A variable name cannot start with a number.</li>
+                        <li>Variable names are case-sensitive.</li>
+                        <li>Spaces are not allowed in variable names.</li>
+                    </ul>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$studentName = "Pooja";
+$_total = 500;
+
+// Invalid examples:
+// $2name = "Pooja";
+// $student name = "Pooja";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Variables help PHP remember information during
+                        program execution. Its dynamic typing makes
+                        assigning different kinds of values easier.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 11 -->
+
+                <section class="article-section" id="section11">
+
+                    <h2>11. Expressions and Operators in PHP</h2>
+
+                    <p>
+                        After understanding variables, I learned how
+                        PHP performs calculations and evaluates values.
+                        This introduced me to expressions and operators.
+                    </p>
+
+                    <h3>What is an expression?</h3>
+
+                    <p>
+                        An expression is a combination of values,
+                        variables, operators and sometimes function
+                        calls that PHP evaluates to produce a result.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$a = 10;
+$b = 5;
+
+$result = $a + $b;
+
+echo $result;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        Here, <strong>$a + $b</strong> is an expression.
+                        PHP evaluates it and produces the result 15.
+                    </p>
+
+                    <h3>What is an operator?</h3>
+
+                    <p>
+                        An operator is a symbol or keyword that performs
+                        an operation on one or more values.
+                    </p>
+
+                    <h3>1. Arithmetic Operators</h3>
+
+                    <p>
+                        These operators perform mathematical calculations.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$a = 10;
+$b = 3;
+
+echo $a + $b;  // Addition
+echo $a - $b;  // Subtraction
+echo $a * $b;  // Multiplication
+echo $a / $b;  // Division
+echo $a % $b;  // Modulus
+echo $a ** $b; // Exponentiation
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>2. Assignment Operators</h3>
+
+                    <p>
+                        Assignment operators assign values to variables
+                        or update their existing values.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$x = 10;
+
+$x += 5;  // Same as $x = $x + 5
+$x -= 2;  // Same as $x = $x - 2
+$x *= 2;  // Same as $x = $x * 2
+$x /= 2;  // Same as $x = $x / 2
+
+echo $x;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>3. Comparison Operators</h3>
+
+                    <p>
+                        Comparison operators compare two values and
+                        return a Boolean result: true or false.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$a = 10;
+$b = 20;
+
+var_dump($a == $b);
+var_dump($a === $b);
+var_dump($a != $b);
+var_dump($a &lt; $b);
+var_dump($a &gt; $b);
+var_dump($a &lt;= $b);
+var_dump($a &gt;= $b);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        An important difference is that
+                        <strong>==</strong> compares values after type
+                        conversion where applicable, whereas
+                        <strong>===</strong> checks both value and type.
+                    </p>
+
+                    <h3>4. Logical Operators</h3>
+
+                    <p>
+                        Logical operators combine or reverse conditions.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$age = 22;
+$hasID = true;
+
+var_dump($age &gt;= 18 &amp;&amp; $hasID);
+var_dump($age &gt;= 18 || $hasID);
+var_dump(!$hasID);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>5. Increment and Decrement Operators</h3>
+
+                    <p>
+                        These operators increase or decrease a variable
+                        by one.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$count = 5;
+
+$count++;
+echo $count;
+
+$count--;
+echo $count;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Expressions combine values and operations,
+                        while operators tell PHP what action to
+                        perform — such as adding, comparing or
+                        assigning values.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 12 -->
+
+                <section class="article-section" id="section12">
+
+                    <h2>12. Conditional Statements — Teaching PHP to Make Decisions</h2>
+
+                    <p>
+                        After learning operators, I started understanding
+                        how a PHP program can make decisions. A program
+                        does not always need to execute every instruction
+                        in the same way. Sometimes it must choose an
+                        action depending on a condition.
+                    </p>
+
+                    <h3>What is a conditional statement?</h3>
+
+                    <p>
+                        A conditional statement allows a program to
+                        execute different blocks of code depending
+                        on whether a condition is true or false.
+                    </p>
+
+                    <h3>1. The if Statement</h3>
+
+                    <p>
+                        The if statement executes its code block only
+                        when the given condition is true.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$age = 20;
+
+if ($age &gt;= 18) {
+    echo "You are eligible to vote.";
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>2. The if-else Statement</h3>
+
+                    <p>
+                        The if-else statement provides two possible
+                        paths. If the condition is true, the if block
+                        executes. Otherwise, the else block executes.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$number = 7;
+
+if ($number % 2 == 0) {
+
+    echo "Even Number";
+
+} else {
+
+    echo "Odd Number";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>3. The if-elseif-else Statement</h3>
+
+                    <p>
+                        When we need to check multiple conditions,
+                        we can use elseif.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$marks = 85;
+
+if ($marks &gt;= 90) {
+
+    echo "Grade A+";
+
+} elseif ($marks &gt;= 75) {
+
+    echo "Grade A";
+
+} elseif ($marks &gt;= 60) {
+
+    echo "Grade B";
+
+} else {
+
+    echo "Needs Improvement";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>4. The switch Statement</h3>
+
+                    <p>
+                        The switch statement is useful when we want
+                        to compare one expression against several
+                        possible values.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$day = 2;
+
+switch ($day) {
+
+    case 1:
+        echo "Monday";
+        break;
+
+    case 2:
+        echo "Tuesday";
+        break;
+
+    case 3:
+        echo "Wednesday";
+        break;
+
+    default:
+        echo "Other day";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        The break statement stops execution from
+                        continuing into the following cases.
+                    </p>
+
+                    <h3>5. The Ternary Operator</h3>
+
+                    <p>
+                        The ternary operator is a short way of
+                        writing a simple if-else expression.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$age = 20;
+
+$message = ($age &gt;= 18)
+    ? "Adult"
+    : "Minor";
+
+echo $message;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="learning-example">
+
+                        <h3>Understanding conditional execution</h3>
+
+                        <p>
+                            Suppose I want to check whether a student
+                            has passed an examination.
+                        </p>
+
+                        <ul>
+                            <li>If marks are 40 or above, display Pass.</li>
+                            <li>Otherwise, display Fail.</li>
+                        </ul>
+
+                        <p>
+                            PHP evaluates the condition and executes
+                            the appropriate block.
+                        </p>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Conditional statements give decision-making
+                        ability to a program. They help PHP respond
+                        differently according to the values and
+                        conditions provided.
+                    </div>
+
+                </section>
+
+                <!-- SECTION 13 -->
+
+                <section class="article-section" id="section13">
+
+                    <h2>13. Prime Number or Not — A Practical Condition Example</h2>
+
+                    <p>
+                        After learning conditional statements, I wanted to
+                        understand how conditions could solve an actual
+                        programming problem. One interesting example was
+                        checking whether a given number is prime or not.
+                    </p>
+
+                    <h3>What is a prime number?</h3>
+
+                    <p>
+                        A prime number is a natural number greater than 1
+                        that has exactly two distinct positive factors:
+                        1 and the number itself.
+                    </p>
+
+                    <p>
+                        For example, 2, 3, 5, 7, 11 and 13 are prime
+                        numbers. However, 4, 6, 8 and 9 are not prime
+                        numbers because they have additional factors.
+                    </p>
+
+                    <h3>How can I check a prime number?</h3>
+
+                    <p>
+                        To check whether a number is prime, I need to
+                        determine whether any number other than 1 and
+                        itself can divide it completely.
+                    </p>
+
+                    <p>
+                        The modulus operator (%) helps us perform this
+                        check because it returns the remainder after
+                        division.
+                    </p>
+
+                    <h3>PHP program to check a prime number</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$number = 17;
+$isPrime = true;
+
+if ($number &lt;= 1) {
+
+    $isPrime = false;
+
+} else {
+
+    for ($i = 2; $i &lt;= sqrt($number); $i++) {
+
+        if ($number % $i == 0) {
+
+            $isPrime = false;
+            break;
+
+        }
+
+    }
+
+}
+
+if ($isPrime) {
+
+    echo "$number is a Prime Number.";
+
+} else {
+
+    echo "$number is not a Prime Number.";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the program step by step</h3>
+
+                    <ol>
+                        <li>
+                            First, I store the number 17 in the
+                            <strong>$number</strong> variable.
+                        </li>
+                        <li>
+                            I create a Boolean variable
+                            <strong>$isPrime</strong> and initially
+                            assign true to it.
+                        </li>
+                        <li>
+                            If the number is less than or equal to 1,
+                            it cannot be prime.
+                        </li>
+                        <li>
+                            Otherwise, the for loop checks possible
+                            divisors starting from 2.
+                        </li>
+                        <li>
+                            If the modulus result is 0, the number
+                            is divisible by that divisor.
+                        </li>
+                        <li>
+                            The program changes $isPrime to false
+                            and uses break to stop the loop.
+                        </li>
+                        <li>
+                            Finally, the if-else statement displays
+                            the result.
+                        </li>
+                    </ol>
+
+                    <p>
+                        We only need to check divisors up to the square
+                        root of the number. If a number has a divisor
+                        greater than its square root, it must also
+                        have a corresponding divisor smaller than
+                        its square root.
+                    </p>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        This example helped me connect variables,
+                        Boolean values, modulus, loops and conditional
+                        statements in one practical PHP program.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 14 -->
+
+                <section class="article-section" id="section14">
+
+                    <h2>14. String Concatenation in PHP</h2>
+
+                    <p>
+                        While working with variables and output,
+                        I learned that sometimes we need to combine
+                        multiple strings or variable values into
+                        one complete sentence.
+                    </p>
+
+                    <p>
+                        This process is called
+                        <strong>string concatenation</strong>.
+                    </p>
+
+                    <h3>What is the concatenation operator?</h3>
+
+                    <p>
+                        PHP uses the dot (.) operator to join
+                        strings together.
+                    </p>
+
+                    <h3>Example 1: Joining two strings</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$firstName = "Pooja";
+$lastName = "Vartia";
+
+$fullName = $firstName . " " . $lastName;
+
+echo $fullName;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Example 2: Joining text with variables</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$name = "Pooja";
+$course = "BCA";
+
+echo "My name is " . $name . " and I completed " . $course . ".";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Example 3: Concatenation assignment operator</h3>
+
+                    <p>
+                        PHP also provides the .= operator. It appends
+                        additional text to an existing string variable.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$message = "Welcome";
+
+$message .= " to PHP";
+$message .= " Learning!";
+
+echo $message;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Difference between arithmetic and concatenation</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$a = 10;
+$b = 20;
+
+echo $a + $b;       // Addition: 30
+
+echo "10" . "20";   // Concatenation: 1020
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        The dot operator joins strings, whereas
+                        the plus operator performs addition.
+                        Understanding this difference is important
+                        when working with text and numeric values.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 15 -->
+
+                <section class="article-section" id="section15">
+
+                    <h2>15. Useful PHP String Functions</h2>
+
+                    <p>
+                        After learning string concatenation, I explored
+                        some built-in PHP functions that make working
+                        with text easier.
+                    </p>
+
+                    <p>
+                        A string is a sequence of characters. PHP
+                        provides several functions to calculate its
+                        length, change its case, search within it
+                        and replace particular text.
+                    </p>
+
+                    <h3>1. strlen() — Finding String Length</h3>
+
+                    <p>
+                        The strlen() function returns the number
+                        of bytes in a string. For ordinary ASCII
+                        text, this usually matches the character count.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$name = "Pooja";
+
+echo strlen($name);
+
+// Output: 5
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>2. str_word_count() — Counting Words</h3>
+
+                    <p>
+                        This function counts the words recognized
+                        in a string.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$sentence = "I am learning PHP programming";
+
+echo str_word_count($sentence);
+
+// Output: 5
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>3. strtoupper() — Converting to Uppercase</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "hello php";
+
+echo strtoupper($text);
+
+// Output: HELLO PHP
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>4. strtolower() — Converting to Lowercase</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "HELLO PHP";
+
+echo strtolower($text);
+
+// Output: hello php
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>5. ucfirst() — Capitalizing the First Character</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "learning php";
+
+echo ucfirst($text);
+
+// Output: Learning php
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>6. ucwords() — Capitalizing Each Word</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "learning php programming";
+
+echo ucwords($text);
+
+// Output: Learning Php Programming
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>7. str_replace() — Replacing Text</h3>
+
+                    <p>
+                        This function replaces specified text
+                        with another value.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "I like JavaScript";
+
+echo str_replace("JavaScript", "PHP", $text);
+
+// Output: I like PHP
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>8. trim() — Removing Extra Whitespace</h3>
+
+                    <p>
+                        The trim() function removes whitespace
+                        and certain other characters from the
+                        beginning and end of a string.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$name = "   Pooja   ";
+
+echo trim($name);
+
+// Output: Pooja
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>9. strpos() — Finding Text Position</h3>
+
+                    <p>
+                        The strpos() function finds the position
+                        of the first occurrence of a substring.
+                        PHP string positions start from zero.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$text = "Learning PHP";
+
+echo strpos($text, "PHP");
+
+// Output: 9
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="learning-example">
+
+                        <h3>Some useful string functions at a glance</h3>
+
+                        <ul>
+                            <li><strong>strlen():</strong> Finds string length in bytes.</li>
+                            <li><strong>str_word_count():</strong> Counts recognized words.</li>
+                            <li><strong>strtoupper():</strong> Converts text to uppercase.</li>
+                            <li><strong>strtolower():</strong> Converts text to lowercase.</li>
+                            <li><strong>ucfirst():</strong> Capitalizes the first character.</li>
+                            <li><strong>ucwords():</strong> Capitalizes the first character of each word.</li>
+                            <li><strong>str_replace():</strong> Replaces specified text.</li>
+                            <li><strong>trim():</strong> Removes whitespace from the ends.</li>
+                            <li><strong>strpos():</strong> Finds the position of a substring.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Built-in string functions save time because
+                        I do not have to write every text-processing
+                        operation manually.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 16 -->
+
+                <section class="article-section" id="section16">
+
+                    <h2>16. Looping Statements in PHP</h2>
+
+                    <p>
+                        While writing programs, I noticed that sometimes
+                        we need to perform the same task repeatedly.
+                        Writing the same instruction again and again
+                        would make the program longer and harder to manage.
+                    </p>
+
+                    <p>
+                        This is where loops become useful.
+                    </p>
+
+                    <h3>What is a loop?</h3>
+
+                    <p>
+                        A loop is a programming structure that executes
+                        a block of code repeatedly as long as its
+                        specified condition allows it to continue.
+                    </p>
+
+                    <h3>1. The while Loop</h3>
+
+                    <p>
+                        The while loop checks its condition before
+                        executing the loop body. If the condition
+                        is true, the statements inside the loop execute.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$i = 1;
+
+while ($i &lt;= 5) {
+
+    echo $i . "&lt;br&gt;";
+
+    $i++;
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        The loop starts at 1 and continues until
+                        the value becomes greater than 5.
+                    </p>
+
+                    <h3>2. The do-while Loop</h3>
+
+                    <p>
+                        The do-while loop executes its body first
+                        and checks the condition afterwards. Therefore,
+                        its statements execute at least once.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$i = 1;
+
+do {
+
+    echo $i . "&lt;br&gt;";
+
+    $i++;
+
+} while ($i &lt;= 5);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>3. The for Loop</h3>
+
+                    <p>
+                        A for loop is useful when we know how many
+                        times we want to repeat a task. Its structure
+                        contains initialization, condition and update.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+for ($i = 1; $i &lt;= 5; $i++) {
+
+    echo $i . "&lt;br&gt;";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the three parts of a for loop</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Initialization:</strong>
+                            $i = 1 sets the starting value.
+                        </li>
+                        <li>
+                            <strong>Condition:</strong>
+                            $i &lt;= 5 decides whether the loop continues.
+                        </li>
+                        <li>
+                            <strong>Update:</strong>
+                            $i++ increases the counter after each iteration.
+                        </li>
+                    </ul>
+
+                    <h3>4. The foreach Loop</h3>
+
+                    <p>
+                        The foreach loop is specially useful for
+                        traversing arrays. We will explore it in
+                        more detail when learning PHP arrays.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$colors = ["Red", "Green", "Blue"];
+
+foreach ($colors as $color) {
+
+    echo $color . "&lt;br&gt;";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding break and continue</h3>
+
+                    <p>
+                        PHP also provides two useful statements
+                        that control loop execution.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>break:</strong>
+                            Immediately terminates the loop.
+                        </li>
+                        <li>
+                            <strong>continue:</strong>
+                            Skips the remaining statements in the
+                            current iteration and moves to the next one.
+                        </li>
+                    </ul>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+for ($i = 1; $i &lt;= 5; $i++) {
+
+    if ($i == 3) {
+        continue;
+    }
+
+    echo $i . "&lt;br&gt;";
+
+}
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        In this example, the number 3 is skipped
+                        because continue moves execution to the
+                        next iteration.
+                    </p>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Loops reduce repeated code and make programs
+                        more efficient. Different loops are useful
+                        for different situations depending on how
+                        and when their conditions are checked.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 17 -->
+
+                <section class="article-section" id="section17">
+
+                    <h2>17. PHP Functions — Reusing Code</h2>
+
+                    <p>
+                        After learning loops, I moved towards another
+                        important programming concept: functions.
+                        While writing programs, I realized that some
+                        tasks may need to be performed more than once.
+                    </p>
+
+                    <p>
+                        Instead of writing the same code repeatedly,
+                        we can place those instructions inside a
+                        function and call it whenever required.
+                    </p>
+
+                    <h3>What is a function?</h3>
+
+                    <p>
+                        A function is a reusable block of code
+                        designed to perform a particular task.
+                    </p>
+
+                    <h3>Creating a user-defined function</h3>
+
+                    <p>
+                        PHP allows us to create our own functions
+                        using the function keyword.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function greet() {
+
+    echo "Hello! Welcome to PHP.";
+
+}
+
+greet();
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the function structure</h3>
+
+                    <ul>
+                        <li>
+                            <strong>function:</strong>
+                            Keyword used to declare a function.
+                        </li>
+                        <li>
+                            <strong>greet:</strong>
+                            Name of the function.
+                        </li>
+                        <li>
+                            <strong>():</strong>
+                            Parentheses that contain parameters when needed.
+                        </li>
+                        <li>
+                            <strong>{ }:</strong>
+                            Curly braces that contain the function body.
+                        </li>
+                        <li>
+                            <strong>greet():</strong>
+                            Calling the function so its code executes.
+                        </li>
+                    </ul>
+
+                    <h3>Example: Calling a function multiple times</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function welcomeMessage() {
+
+    echo "Welcome to my learning journey!&lt;br&gt;";
+
+}
+
+welcomeMessage();
+welcomeMessage();
+welcomeMessage();
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        Instead of writing the same message three
+                        times, I created one function and called
+                        it three times.
+                    </p>
+
+                    <h3>Built-in and user-defined functions</h3>
+
+                    <p>
+                        During my learning, I also understood that
+                        PHP functions can be grouped into two broad
+                        categories.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Built-in functions:</strong>
+                            Functions already provided by PHP,
+                            such as strlen(), date() and rand().
+                        </li>
+                        <li>
+                            <strong>User-defined functions:</strong>
+                            Functions created by programmers
+                            according to their requirements.
+                        </li>
+                    </ul>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Functions make code reusable and organized.
+                        They help divide a large program into smaller
+                        tasks that are easier to understand, test
+                        and maintain.
+                    </div>
+
+                </section>
+
+                <!-- SECTION 18 -->
+
+                <section class="article-section" id="section18">
+
+                    <h2>18. Function Arguments and Default Values</h2>
+
+                    <p>
+                        In the previous chapter, I learned how to create
+                        and call a function. But I also wanted to understand
+                        how a function can work with different values.
+                    </p>
+
+                    <p>
+                        For example, if I create a function to welcome
+                        someone, I should be able to provide a different
+                        person's name whenever I call that function.
+                        This is where function parameters and arguments
+                        become useful.
+                    </p>
+
+                    <h3>What are parameters?</h3>
+
+                    <p>
+                        Parameters are variables written inside the
+                        parentheses of a function declaration. They
+                        receive values when the function is called.
+                    </p>
+
+                    <h3>What are arguments?</h3>
+
+                    <p>
+                        Arguments are the actual values passed to
+                        a function when we call it.
+                    </p>
+
+                    <h3>Example 1: Function with one parameter</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function greet($name) {
+
+    echo "Hello " . $name . "!&lt;br&gt;";
+
+}
+
+greet("Pooja");
+greet("Riya");
+greet("Aman");
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        Here, $name is the parameter, while Pooja,
+                        Riya and Aman are arguments. The same function
+                        can display different names depending on
+                        the argument provided.
+                    </p>
+
+                    <h3>Example 2: Function with multiple parameters</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function addNumbers($a, $b) {
+
+    $sum = $a + $b;
+
+    echo "Sum = " . $sum;
+
+}
+
+addNumbers(10, 20);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        In this example, the function accepts two
+                        parameters and performs addition using
+                        their values.
+                    </p>
+
+                    <h3>What is a default parameter value?</h3>
+
+                    <p>
+                        Sometimes, we may want a function to use
+                        a predefined value when an argument is
+                        not supplied. PHP allows us to assign
+                        default values to parameters.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function welcome($name = "Guest") {
+
+    echo "Welcome " . $name . "!&lt;br&gt;";
+
+}
+
+welcome("Pooja");
+
+welcome();
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        In the first function call, Pooja is passed
+                        as an argument. In the second call, no
+                        argument is provided, so PHP uses Guest
+                        as the default value.
+                    </p>
+
+                    <h3>Example 3: Default values with multiple parameters</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function calculateTotal($price, $quantity = 1) {
+
+    $total = $price * $quantity;
+
+    echo "Total = " . $total . "&lt;br&gt;";
+
+}
+
+calculateTotal(500, 3);
+
+calculateTotal(500);
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        The first call calculates 500 multiplied
+                        by 3. The second call uses the default
+                        quantity of 1.
+                    </p>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Parameters make functions flexible because
+                        we can provide different inputs without
+                        rewriting the function. Default values
+                        make arguments optional when appropriate.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 19 -->
+
+                <section class="article-section" id="section19">
+
+                    <h2>19. Pass by Value and Pass by Reference</h2>
+
+                    <p>
+                        After understanding function arguments,
+                        I explored how values are passed into
+                        functions and whether changes made inside
+                        a function affect the original variable.
+                    </p>
+
+                    <p>
+                        PHP commonly passes arguments by value.
+                        It also allows us to pass a variable by
+                        reference using the ampersand (&amp;) symbol.
+                    </p>
+
+                    <h3>1. Pass by Value</h3>
+
+                    <p>
+                        In pass by value, the function receives
+                        a copy of the argument's value. Changes
+                        made to the function parameter do not
+                        change the original variable.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function changeValue($number) {
+
+    $number = 100;
+
+    echo "Inside function: " . $number . "&lt;br&gt;";
+
+}
+
+$value = 50;
+
+changeValue($value);
+
+echo "Outside function: " . $value;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the output</h3>
+
+                    <p>
+                        Inside the function, the parameter becomes
+                        100. However, the original $value variable
+                        remains 50 because the function received
+                        its value rather than a reference to
+                        the original variable.
+                    </p>
+
+                    <h3>2. Pass by Reference</h3>
+
+                    <p>
+                        In pass by reference, the function
+                        receives a reference to the original
+                        variable. Therefore, changes made
+                        through the parameter affect the
+                        original variable.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function changeValue(&amp;$number) {
+
+    $number = 100;
+
+}
+
+$value = 50;
+
+changeValue($value);
+
+echo $value;
+
+// Output: 100
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the ampersand (&amp;)</h3>
+
+                    <p>
+                        The ampersand is written before the
+                        parameter name in the function
+                        declaration to indicate that the
+                        argument should be passed by reference.
+                    </p>
+
+                    <h3>Difference between both approaches</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Pass by Value:</strong>
+                            The original variable is not changed
+                            by modifying the function parameter.
+                        </li>
+                        <li>
+                            <strong>Pass by Reference:</strong>
+                            Changes made through the function
+                            parameter can affect the original variable.
+                        </li>
+                    </ul>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Pass by value is useful when I want a
+                        function to work with a value without
+                        changing the original variable. Pass
+                        by reference is useful when I intentionally
+                        want the function to modify the original
+                        variable.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 20 -->
+
+                <section class="article-section" id="section20">
+
+                    <h2>20. Returning Values and the return Keyword</h2>
+
+                    <p>
+                        While learning functions, I noticed that
+                        sometimes a function should not directly
+                        display a result. Instead, it should
+                        calculate something and send that result
+                        back to the place where the function
+                        was called.
+                    </p>
+
+                    <p>
+                        PHP provides the <strong>return</strong>
+                        keyword for this purpose.
+                    </p>
+
+                    <h3>What is the return keyword?</h3>
+
+                    <p>
+                        The return keyword ends the execution
+                        of a function and optionally sends a
+                        value back to the calling code.
+                    </p>
+
+                    <h3>Example 1: Returning a calculated value</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function addNumbers($a, $b) {
+
+    $sum = $a + $b;
+
+    return $sum;
+
+}
+
+$result = addNumbers(10, 20);
+
+echo $result;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding the program</h3>
+
+                    <ol>
+                        <li>
+                            The addNumbers() function accepts
+                            two arguments.
+                        </li>
+                        <li>
+                            It calculates their sum.
+                        </li>
+                        <li>
+                            The return keyword sends the result
+                            back to the calling code.
+                        </li>
+                        <li>
+                            The returned value is stored in
+                            the $result variable.
+                        </li>
+                        <li>
+                            Finally, echo displays the result.
+                        </li>
+                    </ol>
+
+                    <h3>Example 2: Using a returned value in another expression</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function square($number) {
+
+    return $number * $number;
+
+}
+
+echo square(5);
+
+$total = square(4) + square(3);
+
+echo "&lt;br&gt;Total = " . $total;
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        Here, the returned values can be used
+                        directly in another expression.
+                    </p>
+
+                    <h3>Example 3: return stops function execution</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+function checkNumber() {
+
+    return "Function completed.";
+
+    echo "This statement will not execute.";
+
+}
+
+echo checkNumber();
+
+?&gt;</code></pre>
+                    </div>
+
+                    <p>
+                        Once PHP executes return, the function
+                        ends. Any statements written after that
+                        return statement in the same execution
+                        path are not executed.
+                    </p>
+
+                    <h3>Difference between echo and return</h3>
+
+                    <ul>
+                        <li>
+                            <strong>echo:</strong>
+                            Sends output to the webpage response.
+                        </li>
+                        <li>
+                            <strong>return:</strong>
+                            Sends a value back to the calling code.
+                        </li>
+                    </ul>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        echo is used to display information,
+                        whereas return is used to send a result
+                        back from a function. A returned value
+                        can be stored, reused or passed into
+                        another calculation.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 21 -->
+
+                <section class="article-section" id="section21">
+
+                    <h2>21. Understanding Arrays in PHP</h2>
+
+                    <p>
+                        After learning variables and functions,
+                        I moved towards another useful concept:
+                        arrays.
+                    </p>
+
+                    <p>
+                        Until now, I had stored individual values
+                        in separate variables. But what if I wanted
+                        to store a list of student names, colors,
+                        subjects or marks?
+                    </p>
+
+                    <p>
+                        Creating a separate variable for every
+                        value would make the program difficult
+                        to manage. Arrays provide a better way
+                        to organize multiple values inside
+                        a single variable.
+                    </p>
+
+                    <h3>What is an array?</h3>
+
+                    <p>
+                        An array is a data structure that stores
+                        multiple values in one variable. PHP
+                        arrays can use integer or string keys
+                        to access their elements.
+                    </p>
+
+                    <h3>Creating an array in PHP</h3>
+
+                    <p>
+                        PHP provides the array() construct and
+                        the short array syntax [] to create arrays.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$colors = array("Red", "Green", "Blue");
+
+$subjects = ["HTML", "CSS", "PHP"];
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Types of PHP arrays</h3>
+
+                    <p>
+                        For learning purposes, PHP arrays are
+                        commonly discussed in three forms:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Indexed Array:</strong>
+                            Uses numeric keys to access values.
+                        </li>
+                        <li>
+                            <strong>Associative Array:</strong>
+                            Uses named string keys to access values.
+                        </li>
+                        <li>
+                            <strong>Multidimensional Array:</strong>
+                            Contains one or more arrays inside another array.
+                        </li>
+                    </ul>
+
+                    <div class="learning-example">
+
+                        <h3>Understanding arrays with a simple example</h3>
+
+                        <p>
+                            Suppose I want to store the names of
+                            three programming languages:
+                        </p>
+
+                        <div class="code-example">
+                            <pre><code>&lt;?php
+
+$languages = ["HTML", "CSS", "PHP"];
+
+?&gt;</code></pre>
+                        </div>
+
+                        <p>
+                            Instead of creating three separate
+                            variables, I can keep all three
+                            values together inside one array.
+                        </p>
+
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Arrays help organize related information
+                        and make it easier to work with lists
+                        of values in a PHP program.
+                    </div>
+
+                </section>
+
+
+                <!-- SECTION 22 -->
+
+                <section class="article-section" id="section22">
+
+                    <h2>22. Indexed Arrays and print_r()</h2>
+
+                    <p>
+                        After understanding the meaning of arrays,
+                        I started exploring their different types.
+                        The first type I learned was the indexed array.
+                    </p>
+
+                    <h3>What is an indexed array?</h3>
+
+                    <p>
+                        An indexed array is an array in which
+                        elements are accessed using numeric keys.
+                        In a newly created indexed array, the
+                        first key normally starts from 0.
+                    </p>
+
+                    <h3>Example 1: Creating an indexed array</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$fruits = ["Apple", "Mango", "Orange"];
+
+echo $fruits[0];
+echo $fruits[1];
+echo $fruits[2];
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Understanding array indexes</h3>
+
+                    <ul>
+                        <li>Index 0 contains Apple.</li>
+                        <li>Index 1 contains Mango.</li>
+                        <li>Index 2 contains Orange.</li>
+                    </ul>
+
+                    <h3>Example 2: Adding values using indexes</h3>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$subjects = [];
+
+$subjects[0] = "HTML";
+$subjects[1] = "CSS";
+$subjects[2] = "PHP";
+
+echo $subjects[2];
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Example 3: Displaying an entire array using print_r()</h3>
+
+                    <p>
+                        When working with arrays, displaying only
+                        one element at a time is not always useful.
+                        Sometimes I want to inspect the complete
+                        array and understand how its keys and
+                        values are organized.
+                    </p>
+
+                    <p>
+                        PHP provides the print_r() function
+                        for displaying human-readable information
+                        about a variable, including arrays.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$colors = ["Red", "Green", "Blue"];
+
+echo "&lt;pre&gt;";
+
+print_r($colors);
+
+echo "&lt;/pre&gt;";
+
+?&gt;</code></pre>
+                    </div>
+
+                    <h3>Why do we use the pre tag?</h3>
+
+                    <p>
+                        The HTML pre element displays preformatted
+                        text. It preserves spaces and line breaks,
+                        which makes the output of print_r()
+                        easier to read in a browser.
+                    </p>
+
+                    <h3>Understanding the output</h3>
+
+                    <div class="code-example">
+                        <pre><code>Array
+(
+    [0] =&gt; Red
+    [1] =&gt; Green
+    [2] =&gt; Blue
+)</code></pre>
+                    </div>
+
+                    <p>
+                        This output shows the array name,
+                        its numeric indexes and their
+                        corresponding values.
+                    </p>
+
+                    <h3>Another useful function: count()</h3>
+
+                    <p>
+                        The count() function returns the number
+                        of elements in an array.
+                    </p>
+
+                    <div class="code-example">
+                        <pre><code>&lt;?php
+
+$fruits = ["Apple", "Mango", "Orange"];
+
+echo count($fruits);
+
+// Output: 3
+
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="author-note">
+                        <strong>What I understood:</strong>
+                        Indexed arrays organize values using
+                        numeric keys. print_r() helps inspect
+                        the complete array, while pre makes
+                        its browser output easier to read.
+                    </div>
+
+                </section>
+
+<!-- SECTION 23: ASSOCIATIVE AND MULTIDIMENSIONAL ARRAYS -->
+<section class="article-section" id="section23">
+
+    <h2>23. Associative and Multidimensional Arrays</h2>
+
+    <p>
+        In the previous section, I learned about indexed arrays, where PHP
+        automatically assigns numeric indexes to array elements. But while
+        working with real information, I sometimes need to remember what
+        each value represents instead of remembering its numeric position.
+    </p>
+
+    <p>
+        This is where I discovered <strong>associative arrays</strong>.
+        Instead of using numbers as keys, associative arrays allow us to
+        assign meaningful names to values.
+    </p>
+
+    <h3>Understanding Associative Arrays</h3>
+
+    <p>
+        An associative array stores information in key-value pairs.
+        Each value is connected to a named key, which makes the data
+        easier to understand and access.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$student = [
+    "name" =&gt; "Pooja",
+    "course" =&gt; "BCA",
+    "marks" =&gt; 85
+];
+
+echo $student["name"];
+echo $student["course"];
+echo $student["marks"];
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Here, <code>name</code>, <code>course</code>, and
+        <code>marks</code> are the keys, while Pooja, BCA, and 85
+        are their corresponding values.
+    </p>
+
+    <p>
+        I can access any value directly by using its key, such as
+        <code>$student["name"]</code>. This is more meaningful than
+        remembering whether a student's name is stored at index 0 or 1.
+    </p>
+
+    <h3>Displaying an Associative Array</h3>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$student = [
+    "name" =&gt; "Pooja",
+    "course" =&gt; "BCA",
+    "marks" =&gt; 85
+];
+
+echo "&lt;pre&gt;";
+print_r($student);
+echo "&lt;/pre&gt;";
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>print_r()</code> function helps me inspect the complete
+        array, while the HTML <code>&lt;pre&gt;</code> tag preserves
+        spacing and line breaks so that the output is easier to read.
+    </p>
+
+    <h3>Understanding Multidimensional Arrays</h3>
+
+    <p>
+        After learning associative arrays, I moved towards another useful
+        concept: multidimensional arrays.
+    </p>
+
+    <p>
+        A multidimensional array is an array that contains one or more
+        arrays inside it. It helps us organize related information in
+        groups, such as records of multiple students.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$students = [
+    [
+        "name" =&gt; "Pooja",
+        "course" =&gt; "BCA",
+        "marks" =&gt; 85
+    ],
+
+    [
+        "name" =&gt; "Rahul",
+        "course" =&gt; "BCA",
+        "marks" =&gt; 90
+    ],
+
+    [
+        "name" =&gt; "Simran",
+        "course" =&gt; "BCA",
+        "marks" =&gt; 88
+    ]
+];
+
+echo $students[0]["name"];
+echo $students[1]["marks"];
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        In this example, the main array contains three smaller associative
+        arrays. Each inner array represents one student's record.
+    </p>
+
+    <p>
+        The expression <code>$students[0]["name"]</code> first accesses
+        the first student's array using index 0 and then retrieves the
+        value associated with the key <code>name</code>.
+    </p>
+
+    <div class="learning-example">
+        <strong>What I understood:</strong>
+        <p>
+            Indexed arrays help me store values using numeric positions,
+            associative arrays help me store values with meaningful keys,
+            and multidimensional arrays help me organize collections of
+            related records.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 24: FOREACH LOOP -->
+<section class="article-section" id="section24">
+
+    <h2>24. Traversing Arrays with the foreach Loop</h2>
+
+    <p>
+        While working with arrays, I realized that accessing every value
+        individually can become difficult when an array contains many
+        elements.
+    </p>
+
+    <p>
+        PHP provides a special loop called <strong>foreach</strong>,
+        which allows us to visit each element of an array one by one.
+        It is especially useful when we do not need to manage indexes
+        manually.
+    </p>
+
+    <h3>Using foreach with an Indexed Array</h3>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$subjects = ["HTML", "CSS", "JavaScript", "PHP"];
+
+foreach ($subjects as $subject) {
+
+    echo $subject . "&lt;br&gt;";
+
+}
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Here, <code>$subjects</code> is the original array and
+        <code>$subject</code> is a temporary variable that receives
+        each value during every iteration.
+    </p>
+
+    <p>
+        The loop continues until all elements have been visited.
+        I do not have to write separate statements for every subject.
+    </p>
+
+    <h3>Using foreach with an Associative Array</h3>
+
+    <p>
+        When I want to access both the key and its corresponding value,
+        I can use the <code>key =&gt; value</code> structure.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$student = [
+    "name" =&gt; "Pooja",
+    "course" =&gt; "BCA",
+    "marks" =&gt; 85
+];
+
+foreach ($student as $key =&gt; $value) {
+
+    echo $key . " : " . $value . "&lt;br&gt;";
+
+}
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        In this example, <code>$key</code> receives the key name and
+        <code>$value</code> receives the corresponding value.
+    </p>
+
+    <h3>Displaying Array Values in an HTML List</h3>
+
+    <p>
+        Since PHP can work together with HTML, I can also use a
+        <code>foreach</code> loop to generate HTML elements dynamically.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP"];
+
+echo "&lt;ul&gt;";
+
+foreach ($skills as $skill) {
+
+    echo "&lt;li&gt;" . htmlspecialchars($skill) . "&lt;/li&gt;";
+
+}
+
+echo "&lt;/ul&gt;";
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Instead of manually writing five list items in HTML, PHP
+        generates them by reading the values from the array.
+        This becomes very useful when information comes from a database.
+    </p>
+
+    <div class="learning-example">
+        <strong>My learning observation:</strong>
+        <p>
+            The <code>foreach</code> loop made array handling easier
+            because I could focus on the values instead of repeatedly
+            managing array positions.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 25: ARRAY PUSH POP SHIFT UNSHIFT -->
+<section class="article-section" id="section25">
+
+    <h2>25. Adding and Removing Items from Arrays</h2>
+
+    <p>
+        After understanding how to create and access arrays, I wanted
+        to learn how to modify them. PHP provides built-in array
+        functions that allow us to add new elements or remove existing
+        elements from different positions.
+    </p>
+
+    <h3>1. array_push() — Adding Elements at the End</h3>
+
+    <p>
+        The <code>array_push()</code> function adds one or more elements
+        to the end of an existing array.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["HTML", "CSS"];
+
+array_push($skills, "JavaScript", "PHP");
+
+print_r($skills);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        After using <code>array_push()</code>, JavaScript and PHP are
+        added after the existing elements.
+    </p>
+
+    <h3>2. array_pop() — Removing the Last Element</h3>
+
+    <p>
+        The <code>array_pop()</code> function removes the last element
+        from an array and returns the removed value.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["HTML", "CSS", "JavaScript", "PHP"];
+
+$removedSkill = array_pop($skills);
+
+echo "Removed: " . $removedSkill;
+
+print_r($skills);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        In this example, PHP is removed from the end of the array.
+    </p>
+
+    <h3>3. array_unshift() — Adding Elements at the Beginning</h3>
+
+    <p>
+        The <code>array_unshift()</code> function inserts one or more
+        elements at the beginning of an array.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["CSS", "JavaScript", "PHP"];
+
+array_unshift($skills, "HTML");
+
+print_r($skills);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Here, HTML becomes the first element of the array.
+    </p>
+
+    <h3>4. array_shift() — Removing the First Element</h3>
+
+    <p>
+        The <code>array_shift()</code> function removes the first element
+        from an array and returns the removed value.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["HTML", "CSS", "JavaScript", "PHP"];
+
+$removedSkill = array_shift($skills);
+
+echo "Removed: " . $removedSkill;
+
+print_r($skills);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        In this case, HTML is removed from the beginning of the array.
+    </p>
+
+    <h3>Understanding the Difference</h3>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Purpose</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>array_push()</code></td>
+                    <td>Adds elements</td>
+                    <td>End</td>
+                </tr>
+                <tr>
+                    <td><code>array_pop()</code></td>
+                    <td>Removes an element</td>
+                    <td>End</td>
+                </tr>
+                <tr>
+                    <td><code>array_unshift()</code></td>
+                    <td>Adds elements</td>
+                    <td>Beginning</td>
+                </tr>
+                <tr>
+                    <td><code>array_shift()</code></td>
+                    <td>Removes an element</td>
+                    <td>Beginning</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>
+        One more thing I learned is that <code>array_shift()</code>
+        and <code>array_unshift()</code> reindex numeric keys in an
+        indexed array. Associative string keys are preserved.
+    </p>
+
+    <div class="learning-example">
+        <strong>What I learned:</strong>
+        <p>
+            These four functions make it easier to manage changing
+            information. For example, I can add new skills, remove an
+            outdated item, or update a list without creating a completely
+            new array.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 26: IMPLODE AND EXPLODE -->
+<section class="article-section" id="section26">
+
+    <h2>26. Joining and Splitting Strings with implode() and explode()</h2>
+
+    <p>
+        While working with arrays and strings, I came across two useful
+        PHP functions: <code>implode()</code> and <code>explode()</code>.
+    </p>
+
+    <p>
+        Their purpose is connected, but they perform opposite operations.
+        One converts an array into a string, while the other converts
+        a string into an array.
+    </p>
+
+    <h3>1. implode() — Converting an Array into a String</h3>
+
+    <p>
+        The <code>implode()</code> function joins all elements of an
+        array into a single string using a separator of our choice.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$skills = ["HTML", "CSS", "JavaScript", "PHP"];
+
+$result = implode(", ", $skills);
+
+echo $result;
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        The output becomes:
+    </p>
+
+    <div class="code-example">
+        <pre><code>HTML, CSS, JavaScript, PHP</code></pre>
+    </div>
+
+    <p>
+        Here, the comma and space are used as separators between
+        the array elements.
+    </p>
+
+    <h3>2. explode() — Converting a String into an Array</h3>
+
+    <p>
+        The <code>explode()</code> function performs the opposite
+        operation. It splits a string into an array whenever it finds
+        the specified separator.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$subjects = "HTML,CSS,JavaScript,PHP";
+
+$result = explode(",", $subjects);
+
+print_r($result);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        The string is divided wherever PHP finds a comma, and each
+        separated part becomes an element of the resulting array.
+    </p>
+
+    <h3>Understanding Both Functions Together</h3>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$subjects = ["HTML", "CSS", "JavaScript", "PHP"];
+
+// Array to String
+$stringData = implode(" | ", $subjects);
+
+echo $stringData;
+
+echo "&lt;br&gt;";
+
+// String to Array
+$arrayData = explode(" | ", $stringData);
+
+print_r($arrayData);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        In this example, I first joined the array elements into one
+        string and then split that string back into an array using
+        the same separator.
+    </p>
+
+    <div class="learning-example">
+        <strong>My understanding:</strong>
+        <p>
+            <code>implode()</code> is useful when I need to combine
+            array values into a readable string, whereas
+            <code>explode()</code> is useful when I need to separate
+            a string into individual parts.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 27: RANDOM NUMBERS, DATE AND TIME -->
+<section class="article-section" id="section27">
+
+    <h2>27. Generating Random Numbers and Working with Date and Time</h2>
+
+    <p>
+        While exploring PHP's built-in functions, I discovered that
+        PHP provides ready-made functions for performing common tasks.
+        Two useful examples are generating random numbers and working
+        with dates and time.
+    </p>
+
+    <h3>Understanding the rand() Function</h3>
+
+    <p>
+        The <code>rand()</code> function generates a pseudo-random
+        integer. We can provide a minimum and maximum value to define
+        the range of numbers.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+$number = rand(1, 100);
+
+echo "Random Number: " . $number;
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Every time this program runs, PHP can generate a different
+        number between 1 and 100, including both limits.
+    </p>
+
+    <p>
+        I also learned that <code>rand()</code> is suitable for simple
+        random-number tasks, but it should not be used for security-sensitive
+        values such as passwords or authentication tokens. For those
+        situations, PHP provides <code>random_int()</code>.
+    </p>
+
+    <h3>Understanding Date and Time in PHP</h3>
+
+    <p>
+        Websites often need to display dates and times. For example,
+        a website may show when a visitor submitted a message, when
+        an account was created, or when a particular record was updated.
+    </p>
+
+    <p>
+        PHP provides the <code>date()</code> function to format a date
+        and time into a readable string.
+    </p>
+
+    <h3>Using the date() Function</h3>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+echo date("d-m-Y");
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        The format characters tell PHP which parts of the date should
+        be displayed.
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>d</code></td>
+                    <td>Day of the month</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td><code>m</code></td>
+                    <td>Month in numbers</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><code>Y</code></td>
+                    <td>Four-digit year</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td><code>h</code></td>
+                    <td>12-hour format</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><code>H</code></td>
+                    <td>24-hour format</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td><code>i</code></td>
+                    <td>Minutes</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td><code>s</code></td>
+                    <td>Seconds</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td><code>A</code></td>
+                    <td>AM or PM</td>
+                    <td>PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Displaying the Current Date and Time</h3>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+date_default_timezone_set("Asia/Kolkata");
+
+echo "Current Date: " . date("d-m-Y");
+
+echo "&lt;br&gt;";
+
+echo "Current Time: " . date("h:i:s A");
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        The <code>date_default_timezone_set()</code> function sets the
+        timezone used by PHP's date and time functions in the current
+        script. Here, I selected the Indian timezone,
+        <code>Asia/Kolkata</code>.
+    </p>
+
+    <h3>Understanding the time() Function</h3>
+
+    <p>
+        The <code>time()</code> function returns the current Unix
+        timestamp. A Unix timestamp represents the number of seconds
+        elapsed since January 1, 1970, at 00:00:00 UTC.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+echo time();
+
+?&gt;</code></pre>
+    </div>
+
+    <h3>Understanding the strtotime() Function</h3>
+
+    <p>
+        The <code>strtotime()</code> function converts many
+        human-readable date and time expressions into a Unix timestamp.
+        We can then format that timestamp using <code>date()</code>.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+date_default_timezone_set("Asia/Kolkata");
+
+$tomorrow = strtotime("+1 day");
+
+echo date("d-m-Y", $tomorrow);
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Here, PHP calculates the timestamp for tomorrow and displays
+        it in day-month-year format.
+    </p>
+
+    <div class="learning-example">
+        <strong>What I understood:</strong>
+        <p>
+            PHP can work with dates and time on the server side.
+            The displayed result depends on the timezone configured
+            for the PHP script or server; it does not automatically
+            use the visitor's browser timezone.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 28: POST SUPERGLOBAL -->
+<section class="article-section" id="section28">
+
+    <h2>28. Receiving Form Data with the $_POST Superglobal</h2>
+
+    <p>
+        After learning variables, conditions, loops, functions, and
+        arrays, I wanted to understand how a website receives information
+        from its visitors.
+    </p>
+
+    <p>
+        For example, when someone fills in a contact form with their
+        name and message and clicks the Submit button, how does the
+        server receive that information?
+    </p>
+
+    <p>
+        This is where HTML forms and PHP work together.
+    </p>
+
+    <h3>Understanding an HTML Form</h3>
+
+    <p>
+        An HTML form collects information from the user. The
+        <code>method</code> attribute specifies how the browser sends
+        the form data to the server.
+    </p>
+
+    <p>
+        One commonly used method is <code>POST</code>.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;form action="process.php" method="POST"&gt;
+
+    &lt;label for="username"&gt;Your Name:&lt;/label&gt;
+
+    &lt;input type="text"
+           id="username"
+           name="username"
+           required&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <p>
+        Here, the form sends its information to a PHP file named
+        <code>process.php</code>.
+    </p>
+
+    <p>
+        One important thing I noticed is the <code>name</code>
+        attribute. The browser uses this name as the key through
+        which PHP can access the submitted form value.
+    </p>
+
+    <h3>Understanding the $_POST Superglobal</h3>
+
+    <p>
+        PHP provides a special predefined associative array called
+        <code>$_POST</code>. It contains form data submitted using
+        the HTTP POST method.
+    </p>
+
+    <p>
+        It is called a superglobal because it is available throughout
+        the PHP script without needing to declare it as a global
+        variable inside every function.
+    </p>
+
+    <h3>Receiving Submitted Information</h3>
+
+    <p>
+        Let's create a file named <code>process.php</code> to receive
+        the submitted name.
+    </p>
+
+    <div class="code-example">
+        <pre><code>&lt;?php
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $username = $_POST["username"] ?? "";
+
+    $username = trim($username);
+
+    if ($username !== "") {
+
+        echo "Welcome, " .
+             htmlspecialchars($username, ENT_QUOTES, "UTF-8");
+
+    } else {
+
+        echo "Please enter your name.";
+
+    }
+
+}
+
+?&gt;</code></pre>
+    </div>
+
+    <p>
+        Let's understand the important parts of this program:
+    </p>
+
+    <ul>
+        <li>
+            <code>$_SERVER["REQUEST_METHOD"]</code> helps us check
+            whether the current request was sent using POST.
+        </li>
+        <li>
+            <code>$_POST["username"]</code> accesses the submitted
+            value using the form field's name.
+        </li>
+        <li>
+            <code>?? ""</code> provides an empty string if the
+            expected POST key is missing.
+        </li>
+        <li>
+            <code>trim()</code> removes unnecessary whitespace
+            from the beginning and end of the submitted string.
+        </li>
+        <li>
+            <code>htmlspecialchars()</code> converts special HTML
+            characters into safe representations before displaying
+            user-submitted text in HTML.
+        </li>
+    </ul>
+
+    <h3>Understanding the Difference Between GET and POST</h3>
+
+    <p>
+        During this learning process, I also came across another
+        commonly used form method: <code>GET</code>.
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>GET</th>
+                    <th>POST</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data is commonly included in the URL as query parameters.</td>
+                    <td>Data is sent in the HTTP request body.</td>
+                </tr>
+                <tr>
+                    <td>Useful for searches and retrieving information.</td>
+                    <td>Commonly used for submitting or sending information.</td>
+                </tr>
+                <tr>
+                    <td>Submitted values may appear in browser history and URLs.</td>
+                    <td>Submitted values do not normally appear in the URL.</td>
+                </tr>
+                <tr>
+                    <td>Accessed using <code>$_GET</code>.</td>
+                    <td>Accessed using <code>$_POST</code>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>
+        I also understood that POST does not automatically make
+        information secure. Sensitive information still needs
+        HTTPS, proper validation, and appropriate security measures.
+    </p>
+
+    <h3>Connecting PHP with a Real Website</h3>
+
+    <p>
+        This concept helped me understand how PHP can be used in
+        practical projects. For example, a portfolio contact form
+        can collect a visitor's name, email address, and message.
+        PHP can receive and validate those values and then save
+        the information into a MySQL database.
+    </p>
+
+    <p>
+        This is one of the ways frontend and backend development
+        work together to create a functional website.
+    </p>
+
+    <div class="learning-example">
+        <strong>My learning observation:</strong>
+        <p>
+            HTML creates the form that visitors interact with,
+            while PHP handles the information received by the server.
+            This made the connection between frontend and backend
+            development much clearer to me.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 29: LEARNING RESOURCES -->
+<section class="article-section" id="section29">
+
+    <h2>29. Learning Resources That Helped Me Explore PHP</h2>
+
+    <p>
+        Learning a programming language is not just about remembering
+        its syntax. It is also about exploring documentation,
+        understanding examples, practising code, and revisiting
+        concepts whenever something feels confusing.
+    </p>
+
+    <p>
+        During my learning journey, I explored online tutorials and
+        references to understand PHP concepts in more detail.
+        Here are some useful resources for continuing this journey:
+    </p>
+
+    <ul>
+        <li>
+            <strong>GeeksforGeeks — PHP Tutorial:</strong>
+            <a href="https://www.geeksforgeeks.org/php/php-tutorial/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore PHP Tutorial
+            </a>
+            <p>
+                A learning resource covering PHP fundamentals,
+                syntax, variables, operators, functions, arrays,
+                and other important concepts.
+            </p>
+        </li>
+
+        <li>
+            <strong>Official PHP Documentation:</strong>
+            <a href="https://www.php.net/manual/en/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore PHP Manual
+            </a>
+            <p>
+                The official reference for PHP language features,
+                built-in functions, examples, and detailed explanations.
+            </p>
+        </li>
+
+        <li>
+            <strong>Apache Friends — XAMPP:</strong>
+            <a href="https://www.apachefriends.org/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore XAMPP
+            </a>
+            <p>
+                A useful resource for understanding and setting up
+                the local development environment.
+            </p>
+        </li>
+    </ul>
+
+    <div class="learning-example">
+        <strong>My approach to learning:</strong>
+        <p>
+            I believe that reading a concept, writing its code,
+            running the program, observing the output, and then
+            experimenting with it independently is a much better
+            way to understand programming.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- SECTION 30: CONCLUSION -->
+<section class="article-section" id="section30">
+
+    <h2>30. My Fourth Handshake with PHP — From Learning Code to Building Functionality</h2>
+
+    <p>
+        Looking back at this learning experience, I can see how my
+        understanding of web development has gradually expanded.
+        Earlier, my focus was mainly on creating the structure and
+        appearance of web pages using HTML and CSS. Later, I explored
+        JavaScript and Bootstrap to make those pages more interactive
+        and responsive.
+    </p>
+
+    <p>
+        With PHP, I started looking beyond what visitors can see on
+        the screen. I began understanding what happens behind a
+        website: how a server processes code, how forms submit
+        information, how conditions control program behaviour,
+        and how arrays and functions help organize data.
+    </p>
+
+    <p>
+        I also became familiar with the idea of connecting server-side
+        programming with databases, which is an important part of
+        building dynamic websites.
+    </p>
+
+    <p>
+        There is still much more to explore, including database
+        connectivity, CRUD operations, sessions, authentication,
+        file handling, and secure backend development. But these
+        fundamentals have given me a starting point for understanding
+        how a complete web application works.
+    </p>
+
+    <p>
+        For me, learning PHP was not simply about learning another
+        programming language. It was about understanding how a website
+        can move from displaying information to receiving, processing,
+        and managing information.
+    </p>
+
+    <blockquote class="opening-quote">
+        Every new technology adds another layer to my understanding
+        of web development. I am not just learning how to write code;
+        I am learning how the pieces connect to build something useful.
+    </blockquote>
+
+    <div class="author-note" id="about-author">
+
+        <h3>A Note from the Author</h3>
+
+        <p>
+            I am Pooja Vartia, a Computer Applications graduate
+            exploring web development through continuous learning,
+            practical coding, and personal projects.
+        </p>
+
+        <p>
+            This article is part of my coding-learning journey,
+            where I document the concepts I explore, the examples
+            I practise, and the understanding I build along the way.
+        </p>
+
+        <p>
+            Thank you for being a part of this learning journey.
+        </p>
+
+        <p><strong>Keep learning. Keep building. Keep exploring!</strong></p>
+
+    </div>
+
+</section>
+
+</article>
+</div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <h3>WebWorldWithPooja</h3>
+
+        <p>
+            Learning, building, and documenting my web development journey.
+        </p>
+
+        <p>
+            &copy; 2026 WebWorldWithPooja. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
